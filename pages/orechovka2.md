@@ -6,7 +6,7 @@ description: Jaké kombinace zkoušet?
 
 Společně s touhou připravit nejlepší ořechovku jsem hledal projekt, v němž použiji statistickou metodu zvanou návrh experimentu, resp. Design of Experiments (DoE). Z této metody popíši nutné minimum a slibuji, že nikoho nevyděsím použitím složité matematiky. Zároveň se však neobejdeme bez pojmů _statistika_, _rovnice_ a _pravděpodobnost_, a abych pravděpodobnost vyděšení minimalizovat, vše vysvětlím na jednoduchém příkladu:
 
-### Příklad: nejlepší nastavení podmínek checmické reakce
+### Příklad: Jak nastavit podmínky chemické reakce?
 Představme si, že se v nějakém provozu vyrábí produkt P chemickou reakcí dvou surovin: `A` gramů první suroviny se smíchá s `B` gramy druhé suroviny a při teplotě `S` se nechají reagovat po dobu `T`. Výrobce **hledá takovou kombinaci vstupů A, B, S, a T, aby získal co nejvíce produktu P** (jak typické - nebo znáte někoho, kdo by chtěl vyrobit co nejméně svého produktu?). Rád by znal závislost P na hodnotách a kombinacích všech vstupů (surovin, teploty, času). Nezná přesné zákonitosti, kterými se reakce řídí, ale experimentováním vypozoroval, že větší množství A vede k většímu množství P, ale zároveň A musí být v nějaké rovnováze s B. Také si všiml, že T nesmí být příliš krátké, neboť A a B nestihnou reagovat, ale ani příliš dlouhé, neboť P se začně rozkládat. 
 
 V tomto příkladu je P **výstupní proměnnou**, zatímco A, B, S a T jsou **vstupní proměnné procesu**. Hledáme takovou kombinaci (**design**) vstupů, která vyprodukuje co nejvíce výstupního produktu P.
