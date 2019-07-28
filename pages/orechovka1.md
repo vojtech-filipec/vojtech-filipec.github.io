@@ -1,9 +1,10 @@
 ---
 layout: page
 title: Jak mne napadlo dát se do experimentů s ořechovkou
-tagline: orechovka - from idea to the first steps
 description: od prvního nápadu k plánu designů
 ---
+
+tagline orechovka - from idea to the first steps
 
 This is what to do if you just want a website. (This page is a bit
 long, but it's really not that much work.)

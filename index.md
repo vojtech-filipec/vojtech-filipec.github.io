@@ -9,7 +9,7 @@ This page was crated using a Karl Broman's tutorial and template that can be fou
 
 The main purpose of setting this up to share how I applied the Design of Experiments (DoE) approach to fine-tuning the recipe for Ořechovka, a semi-sweet, iodine-rich liquer made of non-ripe green wallnuts.
 
-- [Orechovka](pages/orechovka_1.html)
+- [Orechovka](pages/orechovka1.html)
 - [placeholder: part 2](link)
 - etc
 
