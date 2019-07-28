@@ -49,5 +49,7 @@ Stručná odpověď: analýzou dat. Regresní analýzou naměřených hodnot spo
 
 To je vše, co musíme na tomto místě o Design of Experiments znát. Nebudu nyní představovat, jak rovnici sestavit a jak vybrat algoritmus, neboť to si ukážeme v části věnované ořechovce. Pro zájemce o rigorózní popis metod DoE uvádím odkaz na webovou příručku [NIST/SEMATECH e-Handbook of Statistical Methods](https://www.itl.nist.gov/div898/handbook/pmd/section3/pmd3.htm) a dále odkaz na skvělou knihu, která popisuje Optimal Design of Experiments: [Optimal Design of Experiments: A Case Study Approach](https://www.wiley.com/en-us/Optimal+Design+of+Experiments%3A+A+Case+Study+Approach-p-9780470744611).
 
+---
+
 V dalším postu si přečtěte, [jak se DoE snoubí s hledáním nejlepšího receptu na ořechovku](orechovka3.html).
     
