@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Orechovka: jak mne to napadlo
+description: prvni napady
 ---
 
 This is what to do if you just want a website. (This page is a bit

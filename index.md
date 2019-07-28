@@ -14,6 +14,7 @@ The main purpose of setting this up to share how I applied the Design of Experim
 - etc
 
 To refer to Karl Broman's manual I keep his original instructions here. Start with the [Overview](pages/overview.html).
+
 ---
 
 I am thankful to Karl Broman for providing a great [tutorial on creating a simple_site](https://github.com/kbroman/simple_site).
