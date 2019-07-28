@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Orechovka: jak mne to napadlo
+title: Orechovka - jak mne to napadlo
 description: prvni napady
 ---
 
