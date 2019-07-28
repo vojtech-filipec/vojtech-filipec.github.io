@@ -27,19 +27,13 @@ Aby mohl výrobce tuto použít metodu, musí umět říci:
 #### Jak najít nejlepší kombinaci
 V chemickém příkladu je P **výstupní proměnnou**, zatímco A, B, S a T jsou **vstupní proměnné procesu**. Hledáme takovou kombinaci (**design**) vstupů, která vyprodukuje co nejvíce výstupního produktu P. Určitě budeme muset vyzkoušet několik designů, tj. kombinací. Experimentálně lze hledat dvěma způsoby:
 
-1. **způsob naivní**: Výrobce může vyzkoušet všechny možné kombinace všech vstupů a vybrat z nich tu, která povede k nejvyššímu množství P. Může třeba kombinovat dvě úrovně hmotnosti A (1000 a 5000 g) se dvěma hmotnostmi B (ví, že procesu prospívá rovnováha, tak tipne 200 a 1000 g), čímž získá čtyři různé kombinace. Každou z nich vyzkouší při dvou nebo třech teplotách (třeba 75, 85 a 95 °C) a při několika časech mezi 30 a 100 s (tak třeba 35, 65 a 95 s). Původní čtyři kombinace se rozrostou na \(4 * 3 * 3 = 36),, tj. **36 zkušebních kombinací, z nichž jedna bude vykazovat maximální P a zbylých 35 bude k ničemu ** - výrobce je vytěží jen zčásti, anebo vůbec. To nezní jako ekonomický přístup k věci. Navíc kromě jedné dobré kombinace z těch zbylých nevykouká, jakými zákonitostmi se proces řídí.
+1. **způsob naivní**: Výrobce může vyzkoušet všechny možné kombinace všech vstupů a vybrat z nich tu, která povede k nejvyššímu množství P. Může třeba kombinovat dvě úrovně hmotnosti A (1000 a 5000 g) se dvěma hmotnostmi B (ví, že procesu prospívá rovnováha, tak tipne 200 a 1000 g), čímž získá čtyři různé kombinace. Každou z nich vyzkouší při dvou nebo třech teplotách (třeba 75, 85 a 95 °C) a při několika časech mezi 30 a 100 s (tak třeba 35, 65 a 95 s). Původní čtyři kombinace se rozrostou na $$\4\cdot\3\cdot\3 = \36$$, tj. **36 zkušebních kombinací, z nichž jedna bude vykazovat maximální P a zbylých 35 bude k ničemu ** - výrobce je vytěží jen zčásti, anebo vůbec. To nezní jako ekonomický přístup k věci. Navíc kromě jedné dobré kombinace z těch zbylých nevykouká, jakými zákonitostmi se proces řídí.
 1. **způsob založený na statistickém návrhu experimentů (DoE)**: Za použití stejných vstupních informací může zdatný analytik (v dalším textu vyplyne, že tím myslím sebe, resp. toho, kdo se tímto blogem nechá inspirovat) učinit pár jednoduchých kroků, jimiž nejenže najde optimální kombinaci vstupů pro maximální P, ale také matematický popis celého procesu. Těch pár kroků zní:
 
   1. sestavit rovnici, do níž zachytí informace od výrobce (konkrétně _které vstupy_ a _jakým způsobem ovlivňují výstup_),
   1. vybrat některý z algoritmů DoE, který vygeneruje designy, neboli navrhne, jaké kombinace vstupních hodnot se mají experiemntálně vyzkoušet,
-  1. a největší bomba na závěr: **Pokud si navíc zvolí některý z postupů zvaných _Optimální návrh experimentů (Optimal Design of Experiemnts)_, bude mu ke splnění těchto úkolů stačit podstatně méně pokusů než při naivním přístupu.** Místo 36 pokusů jich bude stačit třeba jen 12 -- to znamená třetinové náklady na suroviny, energie i lidskou práci.
+  1. a největší bomba na závěr: **Pokud si navíc zvolí některý z postupů zvaných _Optimální návrh experimentů (Optimal Design of Experiemnts)_, bude mu ke splnění těchto úkolů stačit podstatně méně pokusů než při naivním přístupu.** Místo 36 pokusů jich bude stačit třeba jen 12 -- to znamená třetinové náklady na suroviny, energie i lidskou práci. A přesně tento přístup zvolíme pro hledání nejlepšího receptu na ořechovku.
 
-To je vše, co musíme na tomto místě o DoE znát. Nebudu představovat, jak vybrat algoritmus
-
-#### Více o Design of Experiments
-
-https://www.itl.nist.gov/div898/handbook/pmd/section3/pmd3.htm
-
-Pokud byste se chtěli dovědět více o metodě DoE, odkazuji na online materiály 
+To je vše, co musíme na tomto místě o Design of Experiments znát. Nebudu nyní představovat, jak rovnici sestavit a jak vybrat algoritmus, neboť to si ukážeme v části věnované ořechovce. Pro zájemce o rigorózní popis metod DoE uvádím odkaz na webovou příručku [NIST/SEMATECH e-Handbook of Statistical Methods](https://www.itl.nist.gov/div898/handbook/pmd/section3/pmd3.htm) a dále odkaz na skvělou knihu, která popisuje Optimal Design of Experiments: [Optimal Design of Experiments: A Case Study Approach](https://www.wiley.com/en-us/Optimal+Design+of+Experiments%3A+A+Case+Study+Approach-p-9780470744611).
 
 V dalším postu si přečtěte, [jak se DoE snoubí s hledáním nejlepšího receptu na ořechovku](orechovka3.html).
