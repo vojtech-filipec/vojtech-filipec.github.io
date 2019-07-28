@@ -1,13 +1,14 @@
 ---
 layout: page
-title: Jak mne napadlo dát se do experimentů s ořechovkou
-description: od prvního nápadu k plánu designů
+title: Jak mne napadlo dát se do experimentů s ořechovkou.
+description: Od prvního nápadu k plánu designů.
 ---
 
 tagline orechovka - from idea to the first steps
 
-This is what to do if you just want a website. (This page is a bit
-long, but it's really not that much work.)
+Jeden rodinný známý nám léta dodával výbornou domácí [ořechovku](https://cs.wikipedia.org/wiki/O%C5%99echovka_(n%C3%A1poj)). Několikrát jsem si říkal, že ji zkusím vyrobit sám, ovšem potýkal jsem se se značnou variabilitou receptů - recept našeho známého nebyl k mání a na internetu jsem našel širokou škálu postupů, potřebných surovin, jejich množství a louhovacích časů. 
+
+Zároveň jsem hledal projekt, v němž si vyzkouším statistickou metodu zvanou návrh experimentu, resp. Design of Experiments (DoE). Ta umožňuje popsat výrobní proces, který je popsán nedostatečně (nebo vůbec), jestliže umíme odhadnout, které vstupy ovlivňují výstupní proměnnou a jak ji ovlibňují. Klasickým příkladem může být chemický proces, v němž mícháme A gramů první suroviny, B gramů druhé suroviny a při teplotě S je necháme reagovat po dobu T, abychom získali nějaký produkt P. V takovém případě je P výstupní proměnnou, zatímco A, B, S a T jsou vstupní parametry.
 
 ### First things
 
