@@ -1,7 +1,8 @@
 ---
 layout: page
-title: Orechovka - jak mne to napadlo
-description: prvni napady
+title: Jak mne napadlo dát se do experimentů s ořechovkou
+tagline: orechovka - from idea to the first steps
+description: od prvního nápadu k plánu designů
 ---
 
 This is what to do if you just want a website. (This page is a bit
