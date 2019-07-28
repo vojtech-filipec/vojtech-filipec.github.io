@@ -1,7 +1,6 @@
 ---
 layout: page
-title: Ořechovka: jak mne to napadlo
-description: od nápadu k prvním krokům na cestě k nejlepší ořechovce
+title: Orechovka: jak mne to napadlo
 ---
 
 This is what to do if you just want a website. (This page is a bit
