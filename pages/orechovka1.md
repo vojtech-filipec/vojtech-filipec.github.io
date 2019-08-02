@@ -8,7 +8,7 @@ description: Od prvního nápadu k plánu designů.
 
 Jeden rodinný známý nám léta dodával výbornou domácí [ořechovku](https://cs.wikipedia.org/wiki/O%C5%99echovka_(n%C3%A1poj)). Několikrát jsem si říkal, že ji zkusím vyrobit sám, protože základní postup je jednoduchý: na svatého Jana Křtitele (25. 6.) si nasbíráte nezralé zelené ořechy, nakrájíte je a naložíte do směsi alkoholu a koření. Necháte macerovat na sluníčku a z ořechů se vylouhuje spouta dobrých a vonných látek, z nichž je patrný především jód: čirý alkohol získá postupně tmavě hnědou barvu. Po nějaké době ořechy a koření scedíte, přidáte cukr (někdo jej přidává hned na začátek k ořechům) a necháte rozležet po dobu minimálně jednoho týdne. Poté můžete začít pít. 
 
-Testovaci obrazek orechovky je zde: ![orechovka hotova](../assets/orechovka/pernikova_chaloupka3.jpg){: width="150" height="100" style="float:right; padding:16px"}
+Testovaci obrazek orechovky je zde: ![orechovka hotova](../assets/orechovka/pernikova_chaloupka3.jpg)
 
 ### Který recept je ten nejlepší?
 
