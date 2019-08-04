@@ -12,7 +12,9 @@ The main purpose of setting this page up is to share how I applied the Design of
 - [Design of Experiment: how it works](pages/orechovka2.html)
 - [placeholder: Chosing the most yummy recipe for orechovka with DoE](pages/orechovka3.html)
 
-As the time will pass, I may create another content here. For now, nonetheless, it is all about ořechovka.
+Secondly, I use this place to share ideas about puzzles/riddles/rebuses for small children who don't know reading, writing or arithmetics. 
+- [page with riddles](pages/quizes.html)
+
 
 ---
 
