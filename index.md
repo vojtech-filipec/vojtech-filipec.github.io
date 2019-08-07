@@ -5,15 +5,15 @@ title: Welcome to my page
 description: Minimal tutorial on making a simple website with GitHub Pages
 ---
 
-As of now, this apge is about two topics:
+As of now, this page is about two topics:
 
 ### Desing of Experiments for the Best Ořechovka Ever
 
 The main purpose of setting this page up is to share how I applied the Design of Experiments (DoE) approach to fine-tuning the recipe for ořechovka, a semi-sweet, iodine-rich liquer made of non-ripe green wallnuts. 
 
-- [Orechovka: the initial idea](pages/orechovka1.html)
-- [Design of Experiment: how it works](pages/orechovka2.html)
-- [List of inputs to try via DoE for orechovka](pages/orechovka3.html)
+- [Orechovka](pages/orechovka1.html): the initial idea
+- [Design of Experiment](pages/orechovka2.html): super-fast intro to how it works
+- [Inputs to try for orechovka](pages/orechovka3.html): how I used common sense to reduce the list of possible factors
 
 ### Riddles, quizes and rebuses for small children
 
