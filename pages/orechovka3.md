@@ -1,12 +1,13 @@
 ---
 layout: page
 title: Které faktory ovlivňují chuť ořechovky
+tagline: s počtem faktorů to jde dvanácti ke čtyřem
 ---
 
 V předchozích dvou postech jsem ukazoval, že [receptů na ořechovku je spousta](orechovka1.html) a že pro odvození toho nejchutnějšího použijeme [návrh experimentů](orechovka2.html). 
 
 ---
-# Počáteční seznam faktorů je dlouhý
+### Počáteční seznam faktorů
 Po přečtení všech receptů jsem si sepsal, čím se recepty liší. Rozdílné postupy a ingredience představují vstupy, jejichž optimální kombinaci budu hledat:
 
 1. množství ořechů: některé recepty uvádí počet ořechů, některé jejich hmotnost - já budu pracovat s hmotností, abych zohlednil různou velikost ořechů
@@ -23,7 +24,7 @@ Po přečtení všech receptů jsem si sepsal, čím se recepty liší. Rozdíln
 12. kdy koření přidat: Rovnou do lihu při maceraci, nebo přidat až po scezení ořechů?
 13. jak koření připravit: rozvařovat ve vodě, nebo přidávat do chladného roztoku?
 
-To je spousta faktorů! Kdybych chtěl ověřit je všechny, narostlo by mé hledání do rozměrů, které by pro mne bylo těžké zvládnout - musel bych ověřit několik desítek designů. Proto jsem se zamyslel nad tím, jak situaci zjednodušit.
+**To je spousta faktorů!** Kdybych chtěl ověřit je všechny, narostlo by mé hledání do rozměrů, které by pro mne bylo těžké zvládnout - musel bych ověřit **několik desítek designů**. Proto jsem se zamyslel nad tím, jak situaci zjednodušit.
 
 - První dva vstupy nejsou nezávislé: zvýším-li množství lihu, musím pro intenzitu chuti nutně použít více ořechů. Sloučím tedy první dva faktory do nového faktoru _množství ořechů na 1 litr lihu_.
 - Faktor č. 6 nemohu volit libovolně s ohledem na to, že výsledný likér má mít koncentraci mezi 20 a 30 % alkoholu. Přidám-li vody málo, bude příliš alkoholický, v opačném případě bude vodnatý. Vyjdu tedy z koncentrace lihu pro maceraci (faktor č. 3) a z ředící rovnice dopočítám si, v jakém množství vody musím cukr rozpustit, abych na konci získal 30% roztok. Ředící rovnice není nic jiného, než základoškolská úloha "jakou koncentraci bude mít roztok smíchaný z 1 litru 80% ethanolu a 1 litru čisté vody".
@@ -36,7 +37,7 @@ To je spousta faktorů! Kdybych chtěl ověřit je všechny, narostlo by mé hle
 
 Tyto úvahy a předpoklady zredukovaly vstupy k testování na čtyři položky.
 
-# Finální seznam faktorů k testování
+### Finální seznam faktorů
 
 1. množství ořechů na 1 litr lihu
 3. koncentrace lihu, v níž se ořechy macerují 

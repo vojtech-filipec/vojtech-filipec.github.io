@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Riddles, Puzzles and Rebuses for Small Kids
-tagline: kids under age of 5, puzzle, riddle, rebus, quiz
-description: When reading/writing is not an option
+description: kids under age of 5, puzzle, riddle, rebus, quiz
+tagline: When reading/writing is not an option
 ---
 
 česky: Tato stránka obsahuje mé vlastní nápady na hádanky a šifry pr oděti, které ještě neumí číst, psát ani počítat. Budu rád za vaše [komentáře a tipy na vylepšení](https://github.com/vojtech-filipec/vojtech-filipec.github.io/issues/new). Většinu dojmu sdělí obrázky, proto se omezím na stručné anglické popisky.
