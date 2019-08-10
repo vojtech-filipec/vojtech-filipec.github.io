@@ -50,5 +50,5 @@ The solution is to watch the object against a lamp. Then you see the secret code
 ![envelope against a lamp side](../assets/quizes/envelopereadhigh.jpg)
 
 ## Drawing by a white crayon
-You can draw your house with a white wax crayon on a white paper and place a cross mark to where the treasure is (a balcony for instance). The child gets the white sheet with some sort of colour - it can be an ink, or a watercolour, or a powder colour. The was blocks absorption of the (watery) colour and the picture stands out. You can see a part of our house here:
+You can draw your house with a white wax crayon on a white paper and place a cross mark to where the treasure is (a balcony for instance). The child gets the white sheet with some sort of colour - it can be an ink, or a watercolour, or a powder colour. The wax blocks absorption of the (watery) colour and the picture stands out. You can see a part of our house here:
 ![wax paint](../assets/quizes/waxpaint.jpg)
