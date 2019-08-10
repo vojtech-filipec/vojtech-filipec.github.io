@@ -5,9 +5,9 @@ description: kids under age of 5, puzzle, riddle, rebus, quiz
 tagline: When reading/writing is not an option
 ---
 
-česky: Tato stránka obsahuje mé vlastní nápady na hádanky a šifry pr oděti, které ještě neumí číst, psát ani počítat. Budu rád za vaše [komentáře a tipy na vylepšení](https://github.com/vojtech-filipec/vojtech-filipec.github.io/issues/new). Většinu dojmu sdělí obrázky, proto se omezím na stručné anglické popisky.
+česky: Tato stránka obsahuje mé vlastní nápady na hádanky a šifry pro děti, které ještě neumí číst, psát ani počítat. Budu rád za vaše [komentáře a tipy na vylepšení](https://github.com/vojtech-filipec/vojtech-filipec.github.io/issues/new). Většinu dojmu sdělí obrázky, proto se omezím na stručné anglické popisky.
 
-It is a fun for me to prepare challenges for kids’ minds and then to watch them immersed in the search for solution, be it at home when one appreciates a calm period of time, let alone when travelling on a bus/train for a long period of time. Nonetheless, it may be a challenge for the adults to come up with a task that **requires neither writing, reading nor arithmetics** which are common ingredients of all possible playbooks. 
+English: It is a fun for me to prepare challenges for kids’ minds and then to watch them immersed in the search for solution, be it at home when one appreciates a calm period of time, let alone when travelling on a bus/train for a long period of time. Nonetheless, it may be a challenge for the adults to come up with a task that **requires neither writing, reading nor arithmetics** which are common ingredients of all possible playbooks. 
 
 This page shall be an inspiration for anyone who wants to serve kids’ minds with simple-to-solve challenges. As far as I see the riddles are a great activity for children, and **the experience becomes much stronger if you pack the riddle into a story**: It can be an ancient letter explaining these riddles will lead them to a treasure box, or a request to help the secret agents find a lost diamond, or they may be promised to find a dinosaur skeleton at the end. You can write the letters yourselves and, indeed, you will have to read them too so do not worry about readability of your script. 
 
@@ -49,6 +49,21 @@ The solution is to watch the object against a lamp. Then you see the secret code
 
 ![envelope against a lamp side](../assets/quizes/envelopereadhigh.jpg)
 
-## Drawing by a white crayon
+## Drawing by a wax crayon
 You can draw your house with a white wax crayon on a white paper and place a cross mark to where the treasure is (a balcony for instance). The child gets the white sheet with some sort of colour - it can be an ink, or a watercolour, or a powder colour. The wax blocks absorption of the (watery) colour and the picture stands out. You can see a part of our house here:
 ![wax paint](../assets/quizes/waxpaint.jpg)
+
+## UV-visible pencil
+plan_uv.JPG
+plan_without_uv.JPG
+
+## Musical keys
+noty.JPG
+
+## Complete a map and follow a path
+map_camp.JPG
+map_camp_key.JPG
+
+## Battleship quiz
+lode_riddle.JPG
+lode_board.JPG
