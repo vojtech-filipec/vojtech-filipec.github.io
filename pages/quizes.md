@@ -58,14 +58,14 @@ This riddle requires a bit of a special equipment: a UV lamp and a transparent m
 
 Alternatively, any sort of invisible ink can be used as described in the respective riddle above. 
 
-![plan under the lamp](../assets/quizies/plan_uv.JPG)
+![plan under the lamp](../assets/quizes/plan_uv.JPG)
 
-![plan plain](../assets/quizies/plan_without_uv.JPG)
+![plan plain](../assets/quizes/plan_without_uv.JPG)
 
 ## Musical keys
 This is suitable for children who can read musical keys: code the keyword into keys. Indeed it shall preferably consists of letters C, D, E, F, G, A, B and H; the picture shows a keyword that contains other letters too but the less the better. On the other hand, these extra letters givea hint how to interpret the keys. 
 
-![keys](../assets/quizies/noty.JPG)
+![keys](../assets/quizes/noty.JPG)
 
 ## Complete a map and follow a path
 map_camp.JPG
