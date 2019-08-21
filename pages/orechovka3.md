@@ -40,7 +40,7 @@ Tyto úvahy a předpoklady zredukovaly vstupy k testování na čtyři položky.
 ### Finální seznam faktorů
 
 1. množství ořechů na 1 litr lihu
-3. koncentrace lihu, v níž se ořechy macerují 
+3. koncentrace lihu, v níž se ořechy macerují, neboli množství vody, jímž musím rozředit 1 l lihu 
 4. doba, po níž se ořechy macerují
 5. množství cukru pro doslazení
 
