@@ -33,8 +33,8 @@ Proč jsem volil tuto formu? Vycházím z těchto předpokladů:
 - členy s _m_ a _m<sup>2</sup>_ ... stejně jako u _x_ musí být i cukru tak akorát
 - člen _xm_ ... vliv cukru na výseldnou chuť bude záležet na množství ořechů
 - člen _v_ ... toto je voda pro rozředění lihu před macerací; další vodu budu dolévat po maceraci, aby měly všechny šarže stejnou koncentraci alkoholu; lineárním členem vyzkouším, zda koncentrace lihu pro maceraci má vliv na chuť 
-- členy s _d_ a _d<sup>2</sup>_ ... myslím, že efekt délky macerace se časem nasytí: očekávám rozdíl mezi macerací trvající 3 týdny a 5 týdnů, ale po čase už se vše z ořechů vylouhuje a dodatečná macerace nic dalšího do chuti nepřinese. Zde bych ideálně použil _ln(d)_, jenže pro rovnice s logaritmickým členem je obtížné generovat designy. Logaritmus jsem tedy aproximoval jeho Taylorovým polynomem a použil jsem jen první dva členy: _-0,5 + 2d_, přičemž konstanta bude obsažena v _&beta;<sub>o</sub>_
- 
+- člen s _d_ ... myslím, že efekt délky macerace se časem nasytí: očekávám rozdíl mezi macerací trvající 3 týdny a 5 týdnů, ale po čase už se vše z ořechů vylouhuje a dodatečná macerace nic dalšího do chuti nepřinese. Zde bych ideálně použil _ln(d)_, jenže pro rovnice s logaritmickým členem je obtížné generovat designy. Logaritmus jsem tedy aproximoval jeho Taylorovým polynomem a použil jsem jen první dva členy: _-0,5 + 2d_, přičemž konstanta bude obsažena v _&beta;<sub>o</sub>_
+- ~člen _d<sup>2</sup>_~ z Taylorova rozvoje jsem musel vypustit, neboť jsem se rozhodl připravit devět experimentů a na odhad jeho koeficientu už mi nezbyly stupně volnosti 
 
 ### Použitá minima a maxima 
 Prozkoumal jsem množství ze všech receptů a definoval jsem tato minima a maxima:
