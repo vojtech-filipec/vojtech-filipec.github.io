@@ -62,5 +62,5 @@ Odvození množství vody pro finální koncentraci 30 pct, vycházíme-li z 100
 
 ---
 
-V dalším postu si přečtěte, [jaká minima a maxima vyzkouším a jaký model předpokládám](orechovka4.html).
+V dalším postu si přečtěte, [jak jsem ochutnával a vyhodnocoval](orechovka5.html).
     
