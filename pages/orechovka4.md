@@ -41,12 +41,13 @@ Proč jsem volil tuto formu? Vycházím z těchto předpokladů:
 Prozkoumal jsem množství ze všech receptů a definoval jsem tato minima a maxima:
 
 |------|---------|----------|------------|
-|vstup	|jednotka	|minimum	|maximum|
-|------|---------|----------|------------|
+|vstup | jednotka | minimum	 | maximum |
+|:------|:---------|:----------|:------------|
 |x			|kusů|	15|25|
 |m			|g|	600	|1500|
 |v			|g|	0	|851|
 |d			|týdnů|	3|	6|
+
 
 Pokud se divíte maximálnímu množství cukru (851 g), mrkněte se na konec postu - tam uvedená rovnice říká, jak poklesne koncentrace alkoholu v roztoku po přidání cukru a vody. 
 
@@ -56,17 +57,17 @@ Ač pro většinu své práce používám Python, nenašel jsem v něm žádnou 
 Rozhodl jsem se připravit 9 šarží, minimum bylo 8. Experimentální designy vypadají takto (kód pro generování zveřejním na GitHubu, až SAS vyřeší probléms přihlášením, neboť nyní se k němu nemohu dostat):
 
 |----|------|---------|----------|------------|
-|# |x	|m	|v	|d|
+| # |  x  |  m   |  v  |  d  |
 |----|------|---------|----------|------------|
-|1| 15 |600 |851 |6.0|
-|2| 15 |1100 |0 |3.0|
-|3| 15 |1500 |0 |4.5|
-|4| 19 |600 |0 |4.5|
-|5| 19 |1500 |851 |6.0|
-|6| 25 |600 |0 |6.0|
-|7| 25 |600 |851 |3.0|
-|8| 25 |1100 |851 |4.5|
-|9| 25 |1500 |0| 3.0|
+|1| 15 |600 | 851  |6.0|
+|2| 15 |1100 | 0 | 3.0|
+|3| 15 |1500 | 0 | 4.5|
+|4| 19 |600 | 0 | 4.5|
+|5| 19 |1500 | 851 | 6.0|
+|6| 25 |600 | 0 | 6.0|
+|7| 25 |600 | 851 | 3.0|
+|8| 25 |1100 | 851 | 4.5|
+|9| 25 |1500 | 0 | 3.0|
 
 
 ### Pár úvah kolem
