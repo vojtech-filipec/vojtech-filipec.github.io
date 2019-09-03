@@ -4,7 +4,7 @@ title: Které faktory ovlivňují chuť ořechovky
 tagline: s počtem faktorů to jde dvanácti ke čtyřem
 ---
 
-V předchozích dvou postech jsem ukazoval, že [receptů na ořechovku je spousta](orechovka1.html) a že pro odvození toho nejchutnějšího použijeme [návrh experimentů](orechovka2.html). V tomto postu sestavíme seznam faktorů pro optimalizaci.
+V předchozích dvou postech jsem ukazoval, že [receptů na ořechovku je spousta](orechovka1.html) a že pro odvození toho nejchutnějšího použijeme [optimální návrh experimentů](orechovka2.html). V tomto postu sestavíme seznam faktorů pro optimalizaci.
 
 ---
 ### Počáteční seznam faktorů
