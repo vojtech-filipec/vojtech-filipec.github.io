@@ -41,7 +41,7 @@ Proč jsem volil tuto formu? Vycházím z těchto předpokladů:
 Prozkoumal jsem množství ze všech receptů a definoval jsem tato minima a maxima:
 
 |------|---------|----------|------------|
-|**vstup	|jednotka	|minimum	|maximum**|
+|vstup	|jednotka	|minimum	|maximum|
 |------|---------|----------|------------|
 |x			|kusů|	15|25|
 |m			|g|	600	|1500|
@@ -54,8 +54,9 @@ Pokud se divíte maximálnímu množství cukru (851 g), mrkněte se na konec po
 Ač pro většinu své práce používám Python, nenašel jsem v něm žádnou knihovnu pro generování designů metodami Optimal DoE. Naopak v SASu je k dispozici dobře dokumentovaná procedura `PROC OPTEX`, která umožňuje jednoduše generovat D-optimální designy. Tímto děkuji firmě SAS Institute Inc. za to, že [skrze webový prohlížeč](https://odamid.oda.sas.com/) svůj software poskytuje gratis pro osobní nekomerční využití. 
 
 Experimentální designy vypadají takto (kód pro generování je na mém GitHubu):
+
 |----|------|---------|----------|------------|
-|**# |x	|m	|v	|d**|
+|# |x	|m	|v	|d|
 |----|------|---------|----------|------------|
 |1| 15 |600 |851 |6.0|
 |2| 15 |1100 |0 |3.0|
