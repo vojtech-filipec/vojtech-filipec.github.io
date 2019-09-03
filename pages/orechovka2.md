@@ -4,7 +4,11 @@ title: Superstručný úvod do návrhu experimentů
 description: Jaké kombinace zkoušet?
 ---
 
-Společně s touhou připravit nejlepší ořechovku jsem hledal projekt, v němž použiji statistickou metodu zvanou návrh experimentu, resp. Design of Experiments (DoE). Z této metody popíši nutné minimum na jednoduchém příkladu:
+Společně s touhou připravit nejlepší ořechovku jsem hledal projekt, v němž použiji statistickou metodu zvanou návrh experimentu, resp. Design of Experiments (DoE). Z této metody popíši nutné minimum na jednoduchém příkladu. Jako motivaci ke čtení nejprve shrnu, co si v tomto postu vysvětlíme:
+
+
+> DoE navrhuje kombinace vstupů, které máme experimentálně ověřit, abychom získali co nejpřesnější popis vztahů mezi vstupními proměnnými a výstupem procesu. Návrh vychází z expertních znalostí o důležitých vstupních proměnných, jejich vztahu k výstupní proměnné a rozsahu vstupních proměnných. Optimální DoE navíc zásadním zpsůsobem snižuje počet nutných experimentů. Výstupem DoE je popis vztahů, který nám umožňuje proces nastavit tak, jak chceme.
+
 
 ### Příklad: Jak nastavit podmínky chemické reakce?
 Představme si, že se v nějakém provozu vyrábí produkt P chemickou reakcí dvou surovin: A gramů první suroviny se smíchá s B gramy druhé suroviny a při teplotě S se nechají reagovat po dobu T. Výrobce **hledá takovou kombinaci vstupů A, B, S, a T, aby získal co nejvíce produktu P** (jak typické - nebo znáte někoho, kdo by chtěl vyrobit co nejméně svého produktu?). Rád by znal závislost P na hodnotách a kombinacích všech vstupů (surovin, teploty, času). 
@@ -19,14 +23,15 @@ Od nyní budeme P naývat **výstupní proměnnou**, zatímco A, B, S a T jsou *
 Aby mohl výrobce tuto použít metodu, musí umět říci: 
 
 1. které vstupy ovlivňují množství produktu P: v tomto případě jsou to hmotnosti A a B, teplota S a reakční doba T
-1. jakým způsobem každý vstup ovlivňuje množství produktu P: zde jsme se dověděli, že:
-  - A a B jsou s P svázány vztahem "když zvýším množství A i B, získám více P, ale ani jednoho nesmí být příliš - je tam nějaká rovnováha", 
-  - "při vyšší teplotě S dostáváme trochu vyšší P",
-  - "necháváme to reagovat co nejkratší dobu, jinak se začne P rozkládat". 
 1. jaké jsou minimální a maximální hodnoty vstupů, při nichž má smysl proces testovat: hledáme zkušenosti typu
   - "vzhledem k velikosti reakční nádoby můžeme dát 1000 - 5000 g A a k tomu 200 - 1000 g B"
   - "máme dobrou zkušenost s teplotami mezi 75 - 95 °C"
   - "při časech pod 30 s zůstává mnoho nezreagovaného A, zato při časech nad 100 s se sice všechny suroviny přemění, jenže P se už rokládá"
+1. jakým způsobem každý vstup ovlivňuje množství produktu P: čím konkrétnější, tím lepší:
+  - A a B jsou s P svázány vztahem "když zvýším množství A i B, získám více P, ale ani jednoho nesmí být příliš - je tam nějaká rovnováha", 
+  - "při vyšší teplotě S dostáváme trochu vyšší P",
+  - "necháváme to reagovat co nejkratší dobu, jinak se začne P rozkládat". 
+
   
 Všechna tato fakta v následujícím kroku použijeme při zamyšlení nad tím, jaké designy (kombinace hodnot vstupních faktorů) vyzkoušet.
   
@@ -39,14 +44,12 @@ Intuitivně asi cítíte, že pro splnění úkolu nebude stačit vyzkoušet jed
   - sepíše si myslitelné rozmezí vstupů pro experimenty (tj. informace o _minimálních a maximálních hodnotách vstupů_)
   - vybrat některý z algoritmů DoE a vygenerovat designy, tj. navrhne, jaké kombinace vstupních hodnot se mají experimentálně vyzkoušet,
   - po experimentech s těmito designy se u každé kombinace dozví výslednou hodnotu P a analýzou naměřených dat získá rovnici, která popisuje proces, 
-  - a největší bomba na závěr: **Pokud si navíc zvolí některý z postupů zvaných _Optimální návrh experimentů (Optimal Design of Experiemnts)_, bude mu ke splnění těchto úkolů stačit podstatně méně pokusů než při naivním přístupu.** Místo 36 pokusů jich bude stačit třeba jen 12 -- to znamená třetinové náklady na suroviny, energie i lidskou práci. 
+  - a největší bomba na závěr: **Pokud si navíc zvolí některý z postupů zvaných _Optimální návrh experimentů (Optimal Design of Experiemnts)_, bude mu ke splnění těchto úkolů stačit podstatně méně pokusů než při naivním přístupu.** Místo 36 pokusů jich bude stačit třeba jen 12 -- to znamená třetinové náklady na suroviny, energie i lidskou práci. Za tuto redukci "zaplatíme" tím, že musíme relativně přesně specifikovat (tj. předpokládat) typy závislostí, ovšem je-li proces aspoň trochu známý, tyto zkušenosti bývají k dispozici.
   
   A přesně tento přístup zvolíme pro hledání nejlepšího receptu na ořechovku.
   
 
-### Suma sumárum
-...aneb ještě jednou a stručně: 
-> DoE navrhuje kombinace vstupů, které máme experimentálně ověřit, abychom získali co nejpřesnější popis vztahů mezi vstupními proměnnými a výstupem procesu. Návrh vychází z expertních znalostí o důležitých vstupních proměnných, jejich vztahu k výstupní proměnné a rozsahu vstupních proměnných. Optimální DoE navíc zásadním zpsůsobem snižuje počet nutných experimentů. Výstupem DoE je popis vztahů, který nám umožňuje proces nastavit tak, jak chceme.
+### Další zdroje
 
 To je vše, co musíme na tomto místě o Design of Experiments znát. Nebudu nyní představovat, jak rovnici sestavit a jak vybrat algoritmus, neboť to si ukážeme v části věnované ořechovce. Pro zájemce o rigorózní popis metod DoE uvádím odkaz na webovou příručku [NIST/SEMATECH e-Handbook of Statistical Methods](https://www.itl.nist.gov/div898/handbook/pmd/section3/pmd3.htm) a dále odkaz na skvělou knihu, která popisuje Optimal Design of Experiments: [Optimal Design of Experiments: A Case Study Approach](https://www.wiley.com/en-us/Optimal+Design+of+Experiments%3A+A+Case+Study+Approach-p-9780470744611).
 
