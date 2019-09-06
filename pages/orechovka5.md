@@ -3,7 +3,7 @@ layout: page
 title: Ochutnávání a analýza dat
 tagline: data analysis
 ---
-
+Nejzábavnější část celého projektu: konečně zjistím, jak vzorky chutnají a zda mezi chutí a vstupy existují vztahy, které předpokládám!
 
 ---
 
@@ -13,7 +13,7 @@ Když jsem měl připravené designy, začala fyzická práce: ořechy jsem muse
 
 ### Jak mi vzorky chutnaly?
 
-Cílem ochutnávání bylo seřadit chutě od nejlepší k nejhorší. Byl to příjemný proces, ale ukázalo se že při pouhých 9 vzorcích je porovnání velmi těžké! U některých vzorků jsem cítil, že "to není to pravé", ale odchylka od lepšího vzorku byla pokaždé trochu jiná a porovnat dva "horší" vzorky bylo obtížné - jednou byl příliš trávový, jednou naopak příliš citrónový. V prvním kole ochutnávání mne napadla myšlenka, v níž jsem se utvrdil v druhém kole: některé vzorky seskupím do kategorií. 
+Cílem ochutnávání bylo seřadit chutě od nejlepší k nejhorší. Byl to příjemný proces, ale ukázalo se, že při pouhých 9 vzorcích je porovnání velmi těžké! U některých vzorků jsem cítil, že "to není to pravé", ale odchylka od lepšího vzorku byla pokaždé trochu jiná a porovnat dva "horší" vzorky bylo obtížné - jednou byl příliš trávový, jednou naopak příliš citrónový. V prvním kole ochutnávání mne napadla myšlenka, v níž jsem se utvrdil v druhém kole: některé vzorky seskupím do kategorií o stejné jakosti, neboť nejsem schopen je mezi sebou porovnat. 
 
 ### Jak vzorky vyhodnotit?
 
