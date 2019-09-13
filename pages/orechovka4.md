@@ -69,6 +69,9 @@ Rozhodl jsem se připravit 9 šarží, minimum bylo 8. Experimentální designy 
 |8| 25 |1100 | 851 | 4.5|
 |9| 25 |1500 | 0 | 3.0|
 
+Na jejich otestování budu potřebovat stejné množství sklenic.
+![sklenice](../assets/orechovka/sklenice.jpg)
+
 
 ### Pár úvah kolem
 #### Jak spolu souvisí maximální množství cukru a vody?

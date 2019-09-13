@@ -33,7 +33,10 @@ Po přečtení všech receptů jsem si sepsal, čím se recepty liší. Rozdíln
   - přítomnost cukru neovlivní maceraci, a tak ho přidám až po scezení ořechů a 
   - přítomnost koření také neovlivní maceraci, a tak koření přidám rovnou do lihu a 
   - vařením se ztratí část silic, a tedy budu přidávat do chladné směsi. 
-- Podobně se chovají faktory 10 a 11 (resp. jejich část použít vs. nepoužít). I zde si situaci zjednoduším tím, že namíchám koření dle své chuti: skořice a hřebíčku dám průměrně, mušk. ořechu spíše více a bez citrónové kůry a jalovce se obejdu. 
+- Podobně se chovají faktory 10 a 11 (resp. jejich část použít vs. nepoužít). I zde si situaci zjednoduším tím, že namíchám koření dle své chuti: skořice a hřebíčku dám průměrně, mušk. ořechu spíše více a bez citrónové kůry a jalovce se obejdu. Navážené koření vypadá takto:
+
+![koreni](../assets/orechovka/odvazeno.jpg)
+
 
 Tyto úvahy a předpoklady zredukovaly vstupy k testování na čtyři položky.
 
