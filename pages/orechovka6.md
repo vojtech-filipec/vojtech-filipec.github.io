@@ -22,10 +22,20 @@ Všimněte si následujícího:
 - chuť a cukr &times; ořechy (`taste_rank` a `sugar*nuts`): V pravém horním grafu je vidět, že tato proměnná koreluje pěkně s chutí. Její interpretace je však bez přítomnosti základních členů (tj. samotného cukru a samotného množství ořechů) obtížná. Tyto členy mají však k chuti slabší vazbu a očekávám, že při fitování modelu dostanou menší význam. Pro nalezení ideálního receptu však potřebuji _především_ znalost samotných členů. I z tohoto důvodu je ten interakční člen kandidátem na vyřazení.
 
 ### Fitování modelu
-Nejdříve jsem zkoušel vysvětlovat přesné pořadí pomocí hodnot vstupních faktorů.
 
-kód?
-výstupní HTML?
+Chceme-li popsat výsledný model, bez pomoci statistiky se neobejdeme. Uvedu však jen nutné minimum a především popíši, s čím vším jsem se musel vypořádat a jak jsem postupoval. 
+
+1. Nejdříve jsem zkoušel vysvětlovat přesné pořadí pomocí hodnot vstupních faktorů za použití modelu, který jsem specifikoval [v předchozím postu](orechovka4.html). Narážel jsem však na problém s kompletní, resp. kvazi-kompletní separací pozorování. Co to znamená? Při použití toho uvažovaného modelu vysvětluje model na těchto datech cílovou proměnnou zcela (nebo téměř) dokonale, a maximálně věrohodné odhady parametrů by byly nekonečně velké! Já jsem však potřeboval odhady parametrů znát, abych mohl sestavit nejlepší recept! Na tuto situaci jsem měl dvě možná řešení:
+- vyřadit tři nejsladší vzorky, neboť velké množství cukru přebíjelo všechny ostatní faktory nejen při ochutnávání (tyto šarže byly _podstatně_ horší než ostatní), ale také při hledání parametrů.
+- redukovat model: vypustit některé proměnné
+- (také jsem se snažil použít Firthovu exaktní metodu odhadu a zkoušel jsem i model s parciální proporcionalitou, tzv. partial proportional odds model, ale tudy cesta nevedla)
+
+1. Zvolil jsem redukci proměnných v modelu, a sice jsem vypustil cukr<sup>2</sup> a cukr &times; ořechy (`sugar^2` a `sugar*nuts`). Pohledem do scatterplotu výše jsem tipnul, že právě toto proměnné způsobují separaci. Jejich vypuštěním se samozřejmě mohlo stát to, co se stane pokaždé při chybějící důležité proměnné: odhady ostatních parametrů jsou vychýlené. Tato obava mne však příliš netížila, neboť můj předpoklad o existenci interakce ("chuť je ovlivněna cukrem různě intenzivně při různých množstvích ořechů") byl zcela subjektivní. Toto vedlo k pěknému modelu:
+
+{% include sas_outputs/DOE_ordinal_regression-results.html style="max-width: 500px;"%}
+
+
+
 
 Výsledek: faktory nebyly signifikantní, pouze cukr se ukázal být skoro signifikantní. Těžké porovnat, tj. pořadí bylo zjevně nepřesné. Také to vysvětlovalo široké rozpětí hodno tv receptech. 
 
