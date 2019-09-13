@@ -54,7 +54,7 @@ Pokud se divíte maximálnímu množství cukru (851 g), mrkněte se na konec po
 ### Generování designů
 Ač pro většinu své práce používám Python, nenašel jsem v něm žádnou knihovnu pro generování designů metodami Optimal DoE. Naopak v SASu je k dispozici dobře dokumentovaná procedura `PROC OPTEX`, která umožňuje jednoduše generovat D-optimální designy. Tímto děkuji firmě SAS Institute Inc. za to, že [skrze webový prohlížeč](https://odamid.oda.sas.com/) svůj software poskytuje gratis pro osobní nekomerční využití. 
 
-Rozhodl jsem se připravit 9 šarží, minimum bylo 8. Experimentální designy vypadají takto (kód pro generování zveřejním na GitHubu, až SAS vyřeší probléms přihlášením, neboť nyní se k němu nemohu dostat):
+Rozhodl jsem se připravit 9 šarží, minimum bylo 8. Experimentální designy vypadají takto (kód pro generování [je zde](../assets/orechovka/DOE_orechovka_generate_designs.sas)):
 
 |----|------|---------|----------|------------|
 | # |  x  |  m   |  v  |  d  |
