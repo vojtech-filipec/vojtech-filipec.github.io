@@ -35,8 +35,6 @@ Vyhodnocování modelu je činnost spočívající v pročítání výstupních 
 
 Tento krok vedl k pěknému modelu. Z jeho výstupu ponechávám pouze dvě tabulky:
 
-{% include sas_outputs/DOE_ordinal_regression-results-brief.html style="max-width: 500px;"%}
-
 - v sekci `Testing Global Null Hypothesis: BETA=0` se testuje, zda jsem zvolil správný typ modelu, tj. zda platí předpoklad proporcionálního poměru šancí; tuto hypotézu nezamítají dva testy ze tří (a za standard je považován ten prostřední score test)
 - v tabulce `Analysis of Maximum Likelihood Estimates` vidíme výsledné odhady a také jejich standardizované verze; ty nyní popíši více
  
