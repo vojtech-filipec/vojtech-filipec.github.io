@@ -9,6 +9,10 @@ Společně s touhou připravit nejlepší ořechovku jsem hledal projekt, v něm
 
 > DoE navrhuje kombinace vstupů, které máme experimentálně ověřit, abychom získali co nejpřesnější popis vztahů mezi vstupními proměnnými a výstupem procesu. Návrh vychází z expertních znalostí o důležitých vstupních proměnných, jejich vztahu k výstupní proměnné a rozsahu vstupních proměnných. Optimální DoE navíc zásadním zpsůsobem snižuje počet nutných experimentů. Výstupem DoE je popis vztahů, který nám umožňuje proces nastavit tak, jak chceme.
 
+Takto vypadají šarže pro ořechovku:
+
+![sarze na zacatku](../assets/orechovka/sarzezacatek.jpg)
+
 
 ### Příklad: Jak nastavit podmínky chemické reakce?
 Představme si, že se v nějakém provozu vyrábí produkt P chemickou reakcí dvou surovin: A gramů první suroviny se smíchá s B gramy druhé suroviny a při teplotě S se nechají reagovat po dobu T. Výrobce **hledá takovou kombinaci vstupů A, B, S, a T, aby získal co nejvíce produktu P** (jak typické - nebo znáte někoho, kdo by chtěl vyrobit co nejméně svého produktu?). Rád by znal závislost P na hodnotách a kombinacích všech vstupů (surovin, teploty, času). 
