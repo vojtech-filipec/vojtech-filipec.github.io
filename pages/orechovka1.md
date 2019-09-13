@@ -29,7 +29,8 @@ Receptů je tedy dost, ale který z nich je ten nejlepší? První nápad je ste
 
 Měl jsem tedy nepřeberné množství možností a musel jsem vymyslet, **jak vybrat postup a kombinaci surovin, jimiž získám nejlepší tu nejlepší ořechovku?** 
 
-![lih](../assets/orechovka/lih.jpg)
+![lih](../assets/orechovka/lih.jpg){: width="200" height="300"}`
+
 (Líh je druhou nezbytnou surovinou pro výrobu.)
 
 ---
