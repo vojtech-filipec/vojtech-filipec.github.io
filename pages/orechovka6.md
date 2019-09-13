@@ -13,7 +13,7 @@ Již víte, že pro analyzování použiji ordinální regresi s logitovým link
 
 Prozkoumejme graficky závislosti faktorů mezi sebou a vztah k chuti. Tento scatterplot říká pár zajímavých skutečností o vygenerovaných designech a jejich vazbě k pořadí chuti (tj. `taste_rank`):  
 
-{% include sas_outputs/DOE_ordinal_regression-scatterplot.html style="max-width: 500px;"%}
+{% include sas_outputs/DOE_ordinal_regression-scatterplot-brief.html style="max-width: 500px;"%}
 
 Všimněte si následujícího:
 - množství vody: Všechny designy používají maximum (800 ml), nebo naopak minimum (0 ml) vody, ale žádný netestuje efekt vody mezi nimi. Je to tím, že množství vody se v modelu vyskytuje pouze v lineárním členu. Pro odhad přímky stačí dva body, a proto není zapotřebí uskutečnit experiment někde na půl cesty mezi extrémy.
