@@ -3,7 +3,7 @@ Stay low: my local repo distinguishes the case; GitHub does not (ReadMe = readme
 
 ## Images
 syntax:
-`![alternative text](URL){: width="150" height="100"}` ... resizes the image  
+`![alternative text](URL)	 ... resizes the image  
 
 rotation:
 {: style="transform:rotate(90deg);"} ... places an image over the text!
@@ -35,3 +35,10 @@ or Complex Scalable *Inline Rendering with LaTeX and Codecogs*
 
 **Another option**:
 see the NIST Engineering Handbook what script they allow (MathJax) and how the code is written: view-source:https://www.itl.nist.gov/div898/handbook/pri/section5/pri5323.htm
+
+## Including HTML 
+The include tag allows you to include the content from another file stored in the _includes folder:
+
+`{% include footer.html %}`
+parameter:
+max-width="200px" 

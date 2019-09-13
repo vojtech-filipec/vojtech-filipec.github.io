@@ -16,13 +16,13 @@ Prozkoumejme graficky závislosti faktorů mezi sebou a vztah k chuti. Tento sca
 {% include sas_outputs/DOE_ordinal_regression-scatterplot.html style="max-width: 500px;"%}
 
 Všimněte si následujícího:
-- množství vody: Všimněte si, že všechny designy používají maximum (800 ml), nebo naopak minimum (0 ml) vody, ale žádný netestuje efekt vody mezi nimi. Je to tím, že množství vody se v modelu vyskytuje pouze v lineárním členu. Pro odhad přímky stačí dva body, a proto není zapotřebí zkoušet žádný další.
+- množství vody: Všechny designy používají maximum (800 ml), nebo naopak minimum (0 ml) vody, ale žádný netestuje efekt vody mezi nimi. Je to tím, že množství vody se v modelu vyskytuje pouze v lineárním členu. Pro odhad přímky stačí dva body, a proto není zapotřebí uskutečnit experiment někde na půl cesty mezi extrémy.
 - cukr<sup>2</sup> a cukr &times; ořechy (`sugar^2` a `sugar*nuts`): Ve spodním pravém rohu je patrné, že tyto dva členy jsou hodně korelované. Jeden z nich je adept na vyřazení z modelu.
 - chuť a cukr &times; ořechy (`taste_rank` a `sugar*nuts`): V pravém horním grafu je vidět, že tato proměnná koreluje pěkně s chutí. Její interpretace je však bez přítomnosti základních členů (tj. samotného cukru a samotného množství ořechů) obtížná. Tyto členy mají však k chuti slabší vazbu a očekávám, že při fitování modelu dostanou menší význam. Pro nalezení ideálního receptu však potřebuji _především_ znalost samotných členů. I z tohoto důvodu je ten interakční člen kandidátem na vyřazení.
 
-### Fitování modelu
+### Multivariátní modelu
 
-Chceme-li popsat výsledný model, bez pomoci statistiky se neobejdeme. Uvedu však jen nutné minimum a především popíši, s čím vším jsem se musel vypořádat a jak jsem postupoval. 
+Vyhodnocování modelu je činnost spočívající v pročítání výstupních statistik, které diagnostikují předpoklady a odhadnutý model a popisují, k jakému odhadu dohadu došly. Mně však přijde zajímavé především popsat, s čím vším jsem se musel vypořádat a jak jsem postupoval. 
 
 1. Nejdříve jsem zkoušel vysvětlovat přesné pořadí pomocí hodnot vstupních faktorů za použití modelu, který jsem specifikoval [v předchozím postu](orechovka4.html). Narážel jsem však na problém s kompletní, resp. kvazi-kompletní separací pozorování. Co to znamená? Při použití toho uvažovaného modelu vysvětluje model na těchto datech cílovou proměnnou zcela (nebo téměř) dokonale, a maximálně věrohodné odhady parametrů by byly nekonečně velké! Já jsem však potřeboval odhady parametrů znát, abych mohl sestavit nejlepší recept! Na tuto situaci jsem měl dvě možná řešení:
 - vyřadit tři nejsladší vzorky, neboť velké množství cukru přebíjelo všechny ostatní faktory nejen při ochutnávání (tyto šarže byly _podstatně_ horší než ostatní), ale také při hledání parametrů.
@@ -31,11 +31,11 @@ Chceme-li popsat výsledný model, bez pomoci statistiky se neobejdeme. Uvedu v�
 
 1. Zvolil jsem redukci proměnných v modelu, a sice jsem vypustil cukr<sup>2</sup> a cukr &times; ořechy (`sugar^2` a `sugar*nuts`). Pohledem do scatterplotu výše jsem tipnul, že právě toto proměnné způsobují separaci. Jejich vypuštěním se samozřejmě mohlo stát to, co se stane pokaždé při chybějící důležité proměnné: odhady ostatních parametrů jsou vychýlené. Tato obava mne však příliš netížila, neboť můj předpoklad o existenci interakce ("chuť je ovlivněna cukrem různě intenzivně při různých množstvích ořechů") byl zcela subjektivní. 
 
-Tento krok vedl k pěknému modelu. Z jeho výstupu okomentuji pouze dvě tabulky:
+Tento krok vedl k pěknému modelu. Z jeho výstupu ponechávám pouze dvě tabulky:
 
 {% include sas_outputs/DOE_ordinal_regression-results-brief.html style="max-width: 500px;"%}
 
-- v sekci `Testing Global Null Hypothesis: BETA=0` se testuje, zda jsem zvolil správný typ modelu, tj. zda platí předpoklad proporcionálního poměru šancí; tuto hypotézu potvrzují dva testy ze tří (a za standard je považován score test)
+- v sekci `Testing Global Null Hypothesis: BETA=0` se testuje, zda jsem zvolil správný typ modelu, tj. zda platí předpoklad proporcionálního poměru šancí; tuto hypotézu nezamítají dva testy ze tří (a za standard je považován ten prostřední score test)
 - v tabulce `Analysis of Maximum Likelihood Estimates` vidíme výsledné odhady a také jejich standardizované verze; ty nyní popíši více
  
 ### Interpretace modelu
