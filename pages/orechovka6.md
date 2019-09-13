@@ -32,12 +32,12 @@ Chceme-li popsat výsledný model, bez pomoci statistiky se neobejdeme. Uvedu v�
 
 1. Zvolil jsem redukci proměnných v modelu, a sice jsem vypustil cukr<sup>2</sup> a cukr &times; ořechy (`sugar^2` a `sugar*nuts`). Pohledem do scatterplotu výše jsem tipnul, že právě toto proměnné způsobují separaci. Jejich vypuštěním se samozřejmě mohlo stát to, co se stane pokaždé při chybějící důležité proměnné: odhady ostatních parametrů jsou vychýlené. Tato obava mne však příliš netížila, neboť můj předpoklad o existenci interakce ("chuť je ovlivněna cukrem různě intenzivně při různých množstvích ořechů") byl zcela subjektivní. Toto vedlo k pěknému modelu:
 
-{% include sas_outputs/DOE_ordinal_regression-results.html style="max-width: 500px;"%}
+{% include sas_outputs/DOE_ordinal_regression-results-brief.html style="max-width: 500px;"%}
 
 
 
 
-Výsledek: faktory nebyly signifikantní, pouze cukr se ukázal být skoro signifikantní. Těžké porovnat, tj. pořadí bylo zjevně nepřesné. Také to vysvětlovalo široké rozpětí hodno tv receptech. 
+Také to vysvětlovalo široké rozpětí hodno tv receptech. 
 
 
 Potom jsem vyřadil cukrové šarže. Co odhalila analýza dat?
