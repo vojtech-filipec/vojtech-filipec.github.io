@@ -11,7 +11,7 @@ Nejzábavnější část celého projektu: konečně zjistím, jak vzorky chutna
 
 Když jsem měl připravené designy, začala fyzická práce: ořechy jsem musel nasbírat, omýt, nakrájet a naměřit, vymýt skleničky, očíslovat je, navážit koření a devětkrát smíchat vše v patřičných množstvích. Začala macerace. Během ní jsem vzorky občas protřepal. Po třech týdnech jsem scedil šarže 2, 7 a 9 a přidal jsem k nim cukrový rozvar (tj. cukr rozvařený ve zbytku vody, kteoru bylo třeba dolít do naředění do 30 %). To samé jsem po 4,5 a 6 týdnech udělal s ostatními šaržemi a vše jsem nechával rozležet. 
 
-Ořechy obsahují spoustu jódu, který ulípvá i na rukavicích:
+Ořechy obsahují spoustu jódu, který ulpívá i na rukavicích:
 ![jod](../assets/orechovka/jodoveruce.jpg)
 
 Má domácí manufaktura před přípravou:
