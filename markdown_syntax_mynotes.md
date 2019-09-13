@@ -5,10 +5,12 @@ Stay low: my local repo distinguishes the case; GitHub does not (ReadMe = readme
 syntax:
 `![alternative text](URL){: width="150" height="100"}` ... resizes the image  
 
+rotation:
+{: style="transform:rotate(90deg);"} ... places an image over the text!
+
+
 example:
 `Testovaci obrazek orechovky: ![orechovka hotova](../assets/orechovka/pernikova_chaloupka3.jpg){: width="150" height="100" style="float:right; padding:16px"}`
-rotation:
-{: style="transform:rotate(90deg);"}
 see https://github.com/vojtech-filipec/vojtech-filipec.github.io/commit/eb617af9d12fde8c8244443bb8c60950016c585d
 or the previous for no size parameters
 
