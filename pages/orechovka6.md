@@ -12,9 +12,9 @@ Již víte, že pro analyzování použiji ordinální regresi s logitovým link
 
 ### Univariátní analýza: proměnná po proměnné...
 
-Nebojte, nezavalím vás spousotu statistik. Prozkoumejme závislosti faktorů mezi sebou a vztah k chuti graficky. Tento scatterplot říká pár zajímavých skutečností o vygenerovaných designech a jejich vazbě k pořadí chuti (tj. `taste_rank`):  
+Prozkoumejme graficky závislosti faktorů mezi sebou a vztah k chuti. Tento scatterplot říká pár zajímavých skutečností o vygenerovaných designech a jejich vazbě k pořadí chuti (tj. `taste_rank`):  
 
-{% include sas_outputs/DOE_ordinal_regression-scatterplot.html style="max-width: 200px;"%}
+{% include sas_outputs/DOE_ordinal_regression-scatterplot.html style="max-width: 500px;"%}
 
 Všimněte si následujícího:
 - množství vody: Všimněte si, že všechny designy používají maximum (800 ml), nebo naopak minimum (0 ml) vody, ale žádný netestuje efekt vody mezi nimi. Je to tím, že množství vody se v modelu vyskytuje pouze v lineárním členu. Pro odhad přímky stačí dva body, a proto není zapotřebí zkoušet žádný další.
