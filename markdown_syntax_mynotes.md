@@ -6,7 +6,7 @@ syntax:
 `![alternative text](URL)	 ... resizes the image  
 
 rotation:
-{: style="transform:rotate(90deg);"} ... places an image over the text!
+`{: style="transform:rotate(90deg);"}` ... places an image over the text!
 
 
 example:
