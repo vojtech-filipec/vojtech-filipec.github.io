@@ -11,9 +11,12 @@ As of now, this page is about two topics:
 
 The main purpose of setting this page up is to share how I applied the Design of Experiments (DoE) approach to fine-tuning the recipe for ořechovka, a semi-sweet, iodine-rich liquer made of non-ripe green wallnuts. 
 
-- [Orechovka](pages/orechovka1.html): the initial idea
-- [Design of Experiment](pages/orechovka2.html): super-fast intro to how it works
+- [Ořechovka](pages/orechovka1.html): the initial idea
+- [Design of Experiment](pages/orechovka2.html): super-fast intro to how DoE works
 - [Inputs to try for orechovka](pages/orechovka3.html): how I used common sense to reduce the list of possible factors
+- [How to apply DoE in the search for recipe](pages/orechovka4.html)
+- [Mixing, infusing, degusting](pages/orechovka5.html): practcial steps
+- [Data analysis](pages/orechovka6.html): what do the captured data say?
 
 ### Riddles, quizes and rebuses for small children
 
