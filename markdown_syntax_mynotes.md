@@ -36,10 +36,15 @@ or Complex Scalable *Inline Rendering with LaTeX and Codecogs*
 **Another option**:
 see the NIST Engineering Handbook what script they allow (MathJax) and how the code is written: view-source:https://www.itl.nist.gov/div898/handbook/pri/section5/pri5323.htm
 
-## Including HTML 
-The include tag allows you to include the content from another file stored in the `_includes` folder:
+## Embedded HTML 
+The `include` tag allows you to include the content from another file stored in the `_includes` folder:
 
 `{% include sas_outputs/DOE_ordinal_regression-results-brief.html %}`
 
 parameter:
 max-width="200px" 
+
+It is good to adjust the HTML by deleting unnecesary sections; compare the the DOE_* output between 
+C:\Users\Vojta\D-private\blog-github\_includes\sas_outputs
+a 
+C:\Users\Vojta\D-private\statistika\DOE - design of experiments\SAS code for orechovka\

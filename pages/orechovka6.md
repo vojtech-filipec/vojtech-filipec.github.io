@@ -22,7 +22,7 @@ Prozkoumejme graficky závislosti faktorů mezi sebou a vztah k chuti. Tento sca
 - cukr<sup>2</sup> a cukr &times; ořechy (`sugar^2` a `sugar*nuts`): Ve spodním pravém rohu je patrné, že tyto dva členy jsou hodně korelované. Jeden z nich je adept na vyřazení z modelu.
 - chuť a cukr &times; ořechy (`taste_rank` a `sugar*nuts`): V pravém horním grafu je vidět, že tato proměnná koreluje pěkně s chutí. Její interpretace je však bez přítomnosti základních členů (tj. samotného cukru a samotného množství ořechů) obtížná. Tyto členy mají však k chuti slabší vazbu a očekávám, že při fitování modelu dostanou menší význam. Pro nalezení ideálního receptu však potřebuji _především_ znalost samotných členů. I z tohoto důvodu je ten interakční člen kandidátem na vyřazení.
 
-### Multivariátní modelu
+### Multivariátní model
 
 Vyhodnocování modelu je činnost spočívající v pročítání výstupních statistik, které diagnostikují předpoklady a odhadnutý model a popisují, k jakému odhadu dohadu došly. Mně však přijde zajímavé především popsat, s čím vším jsem se musel vypořádat a jak jsem postupoval. 
 
