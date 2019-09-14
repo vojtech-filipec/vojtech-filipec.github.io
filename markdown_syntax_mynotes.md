@@ -37,8 +37,9 @@ or Complex Scalable *Inline Rendering with LaTeX and Codecogs*
 see the NIST Engineering Handbook what script they allow (MathJax) and how the code is written: view-source:https://www.itl.nist.gov/div898/handbook/pri/section5/pri5323.htm
 
 ## Including HTML 
-The include tag allows you to include the content from another file stored in the _includes folder:
+The include tag allows you to include the content from another file stored in the `_includes` folder:
 
-`{% include footer.html %}`
+`{% include sas_outputs/DOE_ordinal_regression-results-brief.html %}`
+
 parameter:
 max-width="200px" 
