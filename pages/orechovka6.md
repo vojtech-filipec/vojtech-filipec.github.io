@@ -37,7 +37,7 @@ Tento krok vedl k pěknému modelu. Z jeho výstupu ponechávám pouze dvě tabu
 
 {% include sas_outputs/DOE_ordinal_regression-results-brief.html style="max-width: 500px;"%}
 
-- v sekci `Testing Global Null Hypothesis: BETA=0` se testuje, zda jsem zvolil správný typ modelu, tj. zda platí předpoklad proporcionálního poměru šancí; tuto hypotézu nezamítají dva testy ze tří (a za standard je považován ten prostřední score test)
+- v sekci `Score Test for the Proportional Odds Assumption` se testuje, zda jsem platí předpoklad proporcionálního poměru šancí; tuto hypotézu v statistickém žargonu "nemohu zamítnout", což znamená, že s velkou pravděpodobností platí,
 - v tabulce `Analysis of Maximum Likelihood Estimates` vidíme výsledné odhady a také jejich standardizované verze; ty nyní popíši více
  
 ### Interpretace modelu
@@ -49,7 +49,7 @@ Tento krok vedl k pěknému modelu. Z jeho výstupu ponechávám pouze dvě tabu
 
 Celkově model není příliš silný (to vidím z koeficientů a také z tabulky, kterou zde nesdílím), což odpovídá tomu, že navzdory různorodosti experimentálních šarží výsledné chutě _nebyly_ příliš různé (resp. nebyly natolik jiné, abych je byl schopen seřadit s velkou mírou jistoty). Skoro to vypadá, že - s výjimkou cukru - na množství použitých surovin příliš nezáleží. Tento závěr podporuje i široké rozpětí uváděných vstupních surovin, které se vyskytuje v receptech. Ač je překvapivý, je to závěr, s nímž jsem spokojen, neboť odpovídá mému subjektivnímu dojmu z degustace.
 
-Pro zájemce o důkladnější promyšlení tohto závěru uvádím ještě pár poznámek na konci postu
+Pro zájemce o důkladnější promyšlení tohoto závěru uvádím ještě pár poznámek na konci postu
 
 ### Pár úvah kolem
 
