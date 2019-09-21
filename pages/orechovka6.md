@@ -43,32 +43,37 @@ Tento krok vedl k pěknému modelu. Z jeho výstupu ponechávám pouze dvě tabu
 ### Interpretace modelu
 
 Co tedy analýza dat ukázala? Jak chápat tabulku s koeficienty? Pro pochopení koeficientů musíme znát základní pravidlo (pro takto specifikovaný model): 
-- proměnné s kladným koeficientem: vyšší hodnota proměnné vede k vyšší pravděpodobnosti
-- proměnné se záporným koeficientem: vyšší hodnota proměnné vede k nižší pravděpodobnosti
-A o jaké pravděpodobnosti se to vlastně bavíme? My chceme maximalizovat <img src="https://latex.codecogs.com/svg.latex?\textup{P[y=1]}" title="\textup{P[y=1]}" />, což je v kontextu kumulativního modelu <img src="https://latex.codecogs.com/svg.latex?\textup{P[y\leq&space;1]}" title="\textup{P[y\leq 1]}" />. Kvůli _proporcionalitě_ se chceme na logistické křivce dostat se co nejvíce "doprava", aby na kategorie 1 - 8 (pro ty máme v tabulce výše členy <img src="https://latex.codecogs.com/svg.latex?\alpha_{1}" title="\alpha_{1}" /> až <img src="https://latex.codecogs.com/svg.latex?\alpha_{8}" title="\alpha_{8}" />) připadla většina pravděpodobností a na poseldní kategorii, pro níž koeficient nemáme, zůstala co nejmenší pravděpodobnost. 
+- proměnné s kladným koeficientem: vyšší hodnota proměnné nás posouvá na logistické křivce doprava, tj. vede k vyšší pravděpodobnosti
+- proměnné se záporným koeficientem: vyšší hodnota proměnné nás posouvá na logistické křivce doleva, tj. vede k nižší pravděpodobnosti
+
+A o jaké pravděpodobnosti se to vlastně bavíme? My chceme maximalizovat <img src="https://latex.codecogs.com/svg.latex?{P[y=1]}" title="{P[y=1]}" />, což je v kontextu kumulativního modelu <img src="https://latex.codecogs.com/svg.latex?\textup{P[y\leq&space;1]}" title="\textup{P[y\leq 1]}" />. Kvůli _proporcionalitě_ nemusíme řešit každou kategorii zvláště, ale na logistické křivce se chceme dostat co nejvíce "doprava", aby na kategorie 1 - 8 (pro ty máme v tabulce výše členy <img src="https://latex.codecogs.com/svg.latex?\alpha_{1}" title="\alpha_{1}" /> až <img src="https://latex.codecogs.com/svg.latex?\alpha_{8}" title="\alpha_{8}" />) připadla většina pravděpodobností a na poseldní kategorii, pro níž koeficient nemáme, zůstala co nejmenší pravděpodobnost. Dostat se "doprava" tedy znamená maximalizovat součet příspěvků jednotlivých proměnných. 
 
 
 #### Ořechy (proměnné `nuts` a `nuts*nuts`)
-- pro ořechy jsem předpokládal kvadratickou závislost a koeficienty u lineárního i kvadratického členu jsou slabě významné (sloupec `Pr > ChiSq`), čili závislost se potvrdila,
-- standardizované odhady (poslední sloupec) jsou podobně silné: pokud si dosadíte průměrnou hmotnost použitých ořechů (19 ořechům odpovídá 550 gramů), zjistíte, že oba členy jsou (abosultně) téměř stejně velké, 
+- Pro ořechy jsem předpokládal kvadratickou závislost a koeficienty u lineárního i kvadratického členu jsou slabě významné (sloupec `Pr > ChiSq`), čili závislost se potvrdila,
+- standardizované odhady (poslední sloupec) jsou podobně silné: pokud si dosadíte průměrnou hmotnost použitých ořechů (19 ořechům odpovídá 550 gramů), zjistíte, že oba členy jsou (absolutně) téměř stejně velké, 
 - koeficienty mají opačně znaménko, což znamená, že parabola je správně orientovaná: pro nějaké konkrétní `x` dosahuje minima, od něhož na obě strany roste, 
-
+- spočítáte-li si pro několik různých hmotností v rozsahu 250 - 700 g příspěvek ořechů, zjistíte, že je stále záporný - to je tím, že konstanta kvadratické funkce je obsažena v konstantách <img src="https://latex.codecogs.com/svg.latex?\left&space;\{\alpha&space;_{j}&space;\right&space;\}"/>.
  
-- cukr: jednoznačně nejdůležitější
-- voda: téměř nezáleží
-- trvání: vůbec nezáleží
+#### Cukr (`sugar`) 
+- Při pohledu na sloupec `Pr > ChiSq` vidíme, že množství cukru je jednoznačně nejdůležitější proměnnou v modelu,
+- záporná hodnota koeficientu znamená, že menší množství cukru vede k lepší chuti
 
-Celkově model není příliš silný (to vidím z koeficientů a také z tabulky, kterou zde nesdílím), což odpovídá tomu, že navzdory různorodosti experimentálních šarží výsledné chutě _nebyly_ příliš různé (resp. nebyly natolik jiné, abych je byl schopen seřadit s velkou mírou jistoty). Skoro to vypadá, že - s výjimkou cukru - na množství použitých surovin příliš nezáleží. Tento závěr podporuje i široké rozpětí uváděných vstupních surovin, které se vyskytuje v receptech. Ač je překvapivý, je to závěr, s nímž jsem spokojen, neboť odpovídá mému subjektivnímu dojmu z degustace.
+#### Množství vody (`water`) a délka macerace (`duration`)
+- na těchto proměnných téměř (voda), nebo vůbec (délka) nezáleží, neboť jejich významnost je malá (zejména u délky)
 
-Pro zájemce o důkladnější promyšlení tohoto závěru uvádím ještě pár poznámek na konci postu
 
-### Pár úvah kolem
+Celkově model není příliš silný (to vidím z koeficientů a také z tabulky, kterou zde nesdílím), což odpovídá tomu, že navzdory různorodosti experimentálních šarží výsledné chutě _nebyly_ příliš různé (resp. nebyly natolik jiné, abych je byl schopen seřadit s velkou mírou jistoty). Skoro to vypadá, že - s výjimkou cukru - na množství použitých surovin příliš nezáleží. Tento závěr podporuje i široké rozpětí uváděných vstupních surovin, které se vyskytuje v receptech. Ač mne tento závěr překvapil, je to závěr, s nímž jsem spokojen, neboť odpovídá mému subjektivnímu dojmu z degustace.
+
+Pro zájemce o důkladnější promyšlení tohoto závěru uvádím ještě pár poznámek na konci postu. Nyní však konečně můžeme přistoupit k [odvození nejlepšího receptu na ořechovku](orechovka7.html).
+
+---
+
+
+##### Pár úvah kolem
 
 - doba rozležení macerátu s cukrovým rozvarem, to byla proměnná mimo moji kontrolu. Ochutnával jsem jeden týden po konci macerace nejdéle macerované šarže, která tedy byla rozležená právě jeden týden, zatímco ty nejrychleji macerované šarže byly v tu dobu již rozležené již 3 týdny.
 - část nízké výkonnosti mohla být způsobena i tím, že jsem redukoval model, který jsem používal při generování designů
 - Vyhodnotit devět vzorků bylo obtížné. Chuť má mnoho různých nuancí.
 - Různí konzumenti mohou mít různé preference; tohle řazení platí jen pro mne samotného, a tedy i závěry modelu jsou šité na míru mně.
 
----
-
-V [dalším postu](orechovka7.html) konečně odvodíme ten nejlepší recept na ořechovku.
