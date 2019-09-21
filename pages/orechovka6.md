@@ -42,7 +42,18 @@ Tento krok vedl k pěknému modelu. Z jeho výstupu ponechávám pouze dvě tabu
  
 ### Interpretace modelu
 
-- nuts a nuts^2: podobné váhy + správně orientovaná parabola
+Co tedy analýza dat ukázala? Jak chápat tabulku s koeficienty? Pro pochopení koeficientů musíme znát základní pravidlo (pro takto specifikovaný model): 
+- proměnné s kladným koeficientem: vyšší hodnota proměnné vede k vyšší pravděpodobnosti
+- proměnné se záporným koeficientem: vyšší hodnota proměnné vede k nižší pravděpodobnosti
+A o jaké pravděpodobnosti se to vlastně bavíme? My chceme maximalizovat <img src="https://latex.codecogs.com/svg.latex?\textup{P[y=1]}" title="\textup{P[y=1]}" />, což je v kontextu kumulativního modelu <img src="https://latex.codecogs.com/svg.latex?\textup{P[y\leq&space;1]}" title="\textup{P[y\leq 1]}" />. Kvůli _proporcionalitě_ se chceme na logistické křivce dostat se co nejvíce "doprava", aby na kategorie 1 - 8 (pro ty máme v tabulce výše členy <img src="https://latex.codecogs.com/svg.latex?\alpha_{1}" title="\alpha_{1}" /> až <img src="https://latex.codecogs.com/svg.latex?\alpha_{8}" title="\alpha_{8}" />) připadla většina pravděpodobností a na poseldní kategorii, pro níž koeficient nemáme, zůstala co nejmenší pravděpodobnost. 
+
+
+#### Ořechy (proměnné `nuts` a `nuts*nuts`)
+- pro ořechy jsem předpokládal kvadratickou závislost a koeficienty u lineárního i kvadratického členu jsou slabě významné (sloupec `Pr > ChiSq`), čili závislost se potvrdila,
+- standardizované odhady (poslední sloupec) jsou podobně silné: pokud si dosadíte průměrnou hmotnost použitých ořechů (19 ořechům odpovídá 550 gramů), zjistíte, že oba členy jsou (abosultně) téměř stejně velké, 
+- koeficienty mají opačně znaménko, což znamená, že parabola je správně orientovaná: pro nějaké konkrétní `x` dosahuje minima, od něhož na obě strany roste, 
+
+ 
 - cukr: jednoznačně nejdůležitější
 - voda: téměř nezáleží
 - trvání: vůbec nezáleží

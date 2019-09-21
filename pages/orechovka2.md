@@ -30,19 +30,19 @@ Aby mohl výrobce tuto použít metodu, musí umět říci:
 1. jaké jsou minimální a maximální hodnoty vstupů, při nichž má smysl proces testovat: hledáme zkušenosti typu
   - "vzhledem k velikosti reakční nádoby můžeme dát 1000 - 5000 g A a k tomu 200 - 1000 g B"
   - "máme dobrou zkušenost s teplotami mezi 75 - 95 °C"
-  - "při časech pod 30 s zůstává mnoho nezreagovaného A, zato při časech nad 100 s se sice všechny suroviny přemění, jenže P se už rokládá"
+  - "při časech pod 30 s zůstává mnoho nezreagovaného A, zato při časech nad 100 s se sice všechny suroviny přemění, jenže produkt P se už začne rozkládat"
 1. jakým způsobem každý vstup ovlivňuje množství produktu P: čím konkrétnější, tím lepší:
-  - A a B jsou s P svázány vztahem "když zvýším množství A i B, získám více P, ale ani jednoho nesmí být příliš - je tam nějaká rovnováha", 
-  - "při vyšší teplotě S dostáváme trochu vyšší P",
+  - "abych získal více P, musím zvyšovat množství A i B - zjevně je mezi nimi nějaká rovnováha", 
+  - "při vyšší teplotě S dostáváme trochu vyšší P, ale ne o moc",
   - "necháváme to reagovat co nejkratší dobu, jinak se začne P rozkládat". 
 
   
 Všechna tato fakta v následujícím kroku použijeme při zamyšlení nad tím, jaké designy (kombinace hodnot vstupních faktorů) vyzkoušet.
   
 ### Jaké designy máme vyzkoušet?
-Intuitivně asi cítíte, že pro splnění úkolu nebude stačit vyzkoušet jeden design. Budeme jich muset vyzkoušet několik, možná dokonce několik desítek! To se může docela prodražit. Designy pro experiemntální běhy lze vytvářet dvěma způsoby:
+Intuitivně asi cítíte, že pro splnění úkolu nebude stačit vyzkoušet jeden design. Budeme jich muset vyzkoušet několik, možná dokonce několik desítek! To se může docela prodražit. Designy pro experimentální běhy lze vytvářet dvěma způsoby:
 
-1. **způsob naivní**: Můžeme vyzkoušet úplně všechny možné kombinace všech vstupů a vybrat z nich tu, která povede k nejvyššímu množství P. Takových kombinací bude spousta! Můžeme třeba kombinovat dvě úrovně hmotnosti A (1000 a 5000 g) se dvěma hmotnostmi B (procesu prospívá rovnováha, tak tipneme 200 a 250 g suroviny B pro použití s minimálním množství A a potom 900 a 1000 g pro maximální množství A), čímž získáme čtyři různé kombinace. Každou z nich necháme reagovat při dvou nebo třech teplotách (třeba 75, 85 a 95 °C) a při několika časech mezi 30 a 100 s (tak třeba 35, 65 a 95 s). Původní čtyři kombinace se rozrostou na <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;4\times3\times3" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\inline&space;4\times3\times3" title="4\times3\times3" /></a>, tj. **36 zkušebních kombinací, z nichž jedna bude vykazovat maximální P a zbylých 35 bude k ničemu** - výrobce je vytěží jen zčásti, anebo vůbec. To nezní jako ekonomický přístup k věci. Navíc z tohoto přístupu asi nevykoukáme, jakými zákonitostmi se proces řídí.
+1. **způsob naivní**: Můžeme vyzkoušet úplně všechny možné kombinace všech vstupů a vybrat z nich tu, která povede k nejvyššímu množství P. Takových kombinací bude spousta! Můžeme třeba kombinovat dvě úrovně hmotnosti A (1000 a 5000 g) se dvěma hmotnostmi B (procesu prospívá rovnováha, tak tipneme 200 a 250 g suroviny B pro použití s minimálním množství A a potom 900 a 1000 g pro maximální množství A), čímž získáme čtyři různé kombinace. Každou z nich necháme reagovat při dvou nebo třech teplotách (třeba 75, 85 a 95 °C) a při několika časech mezi 30 a 100 s (tak třeba 35, 65 a 95 s). Původní čtyři kombinace se rozrostou na <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;4\times3\times3" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\inline&space;4\times3\times3" title="4\times3\times3" /></a>, tj. **36 zkušebních kombinací, z nichž jedna bude vykazovat maximální P a zbylých 35 bude k ničemu** - výrobce je vytěží jen zčásti, anebo vůbec. To nezní jako ekonomický přístup k věci. Navíc nemáme zaručeno, že z tohoto přístupu vykoukáme, jakými zákonitostmi se proces řídí.
 1. **způsob založený na statistickém návrhu experimentů (DoE)**: Za použití stejných vstupních informací může zdatný analytik (v dalším textu vyplyne, že tím myslím sebe, resp. toho, kdo se tímto blogem nechá inspirovat) učinit pár jednoduchých kroků, jimiž určí zákonistosti výroby a z nich najde optimální kombinaci vstupů pro maximální P. Těch pár kroků zní:
   - sestavit rovnici, do níž zachytí informace od výrobce (konkrétně _které vstupy_ a _jakým způsobem_ ovlivňují výstup),
   - sepíše si myslitelné rozmezí vstupů pro experimenty (tj. informace o _minimálních a maximálních hodnotách vstupů_)

@@ -7,7 +7,7 @@ description: Minimal tutorial on making a simple website with GitHub Pages
 
 As of now, this page is about two topics:
 
-### Desing of Experiments for the Best Ořechovka Ever
+### The Best Ořechovka Ever prepared using Desing of Experiments
 
 The main purpose of setting this page up is to share how I applied the Design of Experiments (DoE) approach to fine-tuning the recipe for ořechovka, a semi-sweet, iodine-rich liquer made of non-ripe green wallnuts. 
 
@@ -15,7 +15,7 @@ The main purpose of setting this page up is to share how I applied the Design of
 - [Design of Experiment](pages/orechovka2.html): super-fast intro to how DoE works
 - [Inputs to try for orechovka](pages/orechovka3.html): how I used common sense to reduce the list of possible factors
 - [How to apply DoE in the search for recipe](pages/orechovka4.html)
-- [Mixing, infusing, degusting](pages/orechovka5.html): practcial steps
+- [Mixing, infusing, degusting](pages/orechovka5.html): practical steps
 - [Data analysis](pages/orechovka6.html): what do the captured data say?
 
 ### Riddles, quizes and rebuses for small children
