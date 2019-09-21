@@ -37,7 +37,7 @@ Tento krok vedl k pěknému modelu. Z jeho výstupu ponechávám pouze dvě tabu
 
 {% include sas_outputs/DOE_ordinal_regression-results-brief.html style="max-width: 500px;"%}
 
-- v sekci `Score Test for the Proportional Odds Assumption` se testuje, zda jsem platí předpoklad proporcionálního poměru šancí; tuto hypotézu v statistickém žargonu "nemohu zamítnout", což znamená, že s velkou pravděpodobností platí,
+- v sekci `Score Test for the Proportional Odds Assumption` se testuje, zda jsem platí předpoklad proporcionálního poměru šancí; tuto hypotézu ve statistickém žargonu "nemohu zamítnout", což znamená, že s velkou pravděpodobností platí,
 - v tabulce `Analysis of Maximum Likelihood Estimates` vidíme výsledné odhady a také jejich standardizované verze; ty nyní popíši více
  
 ### Interpretace modelu
@@ -46,7 +46,7 @@ Co tedy analýza dat ukázala? Jak chápat tabulku s koeficienty? Pro pochopení
 - proměnné s kladným koeficientem: vyšší hodnota proměnné nás posouvá na logistické křivce doprava, tj. vede k vyšší pravděpodobnosti
 - proměnné se záporným koeficientem: vyšší hodnota proměnné nás posouvá na logistické křivce doleva, tj. vede k nižší pravděpodobnosti
 
-A o jaké pravděpodobnosti se to vlastně bavíme? My chceme maximalizovat <img src="https://latex.codecogs.com/svg.latex?{P[y=1]}" title="{P[y=1]}" />, což je v kontextu kumulativního modelu <img src="https://latex.codecogs.com/svg.latex?\textup{P[y\leq&space;1]}" title="\textup{P[y\leq 1]}" />. Kvůli _proporcionalitě_ nemusíme řešit každou kategorii zvláště, ale na logistické křivce se chceme dostat co nejvíce "doprava", aby na kategorie 1 - 8 (pro ty máme v tabulce výše členy <img src="https://latex.codecogs.com/svg.latex?\alpha_{1}" title="\alpha_{1}" /> až <img src="https://latex.codecogs.com/svg.latex?\alpha_{8}" title="\alpha_{8}" />) připadla většina pravděpodobností a na poseldní kategorii, pro níž koeficient nemáme, zůstala co nejmenší pravděpodobnost. Dostat se "doprava" tedy znamená maximalizovat součet příspěvků jednotlivých proměnných. 
+A o jaké pravděpodobnosti se to vlastně bavíme? My chceme maximalizovat <img src="https://latex.codecogs.com/svg.latex?{P[y=1]}" title="{P[y=1]}" />, což je v kontextu kumulativního modelu <img src="https://latex.codecogs.com/gif.latex?P[y\leq&space;1]"/>. Kvůli _proporcionalitě_ nemusíme řešit každou kategorii zvlášt, ale na logistické křivce se chceme dostat co nejvíce "doprava", aby na kategorie 1 - 8 (pro ty máme v tabulce výše členy <img src="https://latex.codecogs.com/svg.latex?\alpha_{1}" title="\alpha_{1}" /> až <img src="https://latex.codecogs.com/svg.latex?\alpha_{8}" title="\alpha_{8}" />) připadla většina pravděpodobností a na poslední kategorii, pro níž koeficient nemáme, zůstala co nejmenší pravděpodobnost. Dostat se "doprava" tedy znamená maximalizovat součet příspěvků jednotlivých proměnných. 
 
 
 #### Ořechy (proměnné `nuts` a `nuts*nuts`)
@@ -69,8 +69,7 @@ Pro zájemce o důkladnější promyšlení tohoto závěru uvádím ještě pá
 
 ---
 
-
-##### Pár úvah kolem
+##### Poznámky pod čarou
 
 - doba rozležení macerátu s cukrovým rozvarem, to byla proměnná mimo moji kontrolu. Ochutnával jsem jeden týden po konci macerace nejdéle macerované šarže, která tedy byla rozležená právě jeden týden, zatímco ty nejrychleji macerované šarže byly v tu dobu již rozležené již 3 týdny.
 - část nízké výkonnosti mohla být způsobena i tím, že jsem redukoval model, který jsem používal při generování designů
