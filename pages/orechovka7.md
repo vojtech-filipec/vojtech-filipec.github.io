@@ -10,13 +10,13 @@ Když už chápeme, jak záleží a nezáleží na jednotlivých vstupech ([pře
 
 ### Jak optimální recept odvodit?
 
-*Při odvozování receptu se budeme snažit maximalizovat součet příspěvků jednotlivých vstupů.* Proč?
+Při odvozování receptu budeme *maximalizovat součet příspěvků jednotlivých vstupů.* Proč a co to znamená?
 
 
 V předchozí části jsme si vysvětlili, že když hodnotíme jednotlivé proměnné, záleží na tom, zda je koeficient před nimi kladný, nebo záporný. Při posuzování kombinace všech našich vstupů si musíme uvědomit následující ekvivalenci:
 <img src="https://latex.codecogs.com/svg.latex?\inline&space;\alpha&space;_{j}&space;&plus;&space;\sum&space;\beta&space;_{i}x&space;_{i}&space;\equiv&space;\alpha&space;_{j}&space;&plus;&space;1\cdot&space;(&space;\sum&space;\beta&space;_{i}x&space;_{i})"/>
 
-To vlastně znamená, že před kombinací koeficientů a hodnot proměnných si domyslíme násobení jednou, tedy kladným koeficientem. Teď už můžeme použít moudro z předchozího postu, které zde připomínám:
+To vlastně znamená, že před kombinací koeficientů a hodnot proměnných si domyslíme násobení jednou, tedy kladným koeficientem. Teď už můžeme použít pravidlo z předchozího postu:
 > proměnné s kladným koeficientem: vyšší hodnota proměnné nás posouvá na logistické křivce doprava, tj. vede k vyšší pravděpodobnosti
 
 Se znalostí tohoto pravidla odvodíme, kolik které suroviny použít.
@@ -41,7 +41,7 @@ Tato proměnná také není statisticky významná, tj. na délce louhování ne
 > - 550 gramů nezralých vlašškých ořechů trhaných na svátek sv. Jana
 - 1 litr likéru s koncentrací mezi 30 a 80 % alkoholu
 - 600 gramů bílého cukru
-- koření dle chuti
+- koření dle chuti              
 Ořechy očistěte, nakrájejte a dejte macerovat do lihu. Láhev s macerátem by měla být jen jemně dovřená, maceraci svědčí sluneční svit a občasné promíchání. Po 3 až 6 týdnech ořechy slijte, macerát přeceďte a smíchejte jej se sirupem, který svaříte z cukru a vody (množství volte podle toho, jak silný chcete likér mít; pomoci vám může být závislost uvedená [na konci tohoto postu](orechovka4.html)) a před vmícháním necháte vychladnout. Do smíchaného roztoku přidejte i koření a nechejte rozležet - čím déle, tím lépe. Doporučuji průběžně ochutnávat, abyste zjistili, jak se chuť mění a kdy vám nejvíce vyhovuje.
 
 PS: Budu rád, když recept někdy zkusíte a napíšete mi, jak vám chutná, ale vězte, že hodnocení chutí jsem prováděl já, a tak není zaručeno, že bude nejlepší i pro vás! Budete-li se mým přístupem chtít inspirovat a budete-li potřebovat radu, [napište mi zprávu](https://github.com/vojtech-filipec/vojtech-filipec.github.io/issues).

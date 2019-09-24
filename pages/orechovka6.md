@@ -49,7 +49,7 @@ Co tedy analýza dat ukázala? Jak chápat tabulku s koeficienty? Pro posouzení
 - proměnné s kladným koeficientem: vyšší hodnota proměnné nás posouvá na logistické křivce doprava, tj. vede k vyšší pravděpodobnosti
 - proměnné se záporným koeficientem: vyšší hodnota proměnné nás posouvá na logistické křivce doleva, tj. vede k nižší pravděpodobnosti
 
-A o jaké pravděpodobnosti se to vlastně bavíme? Při hledání nejlepšího receptu hledáme takové hodnoty vstupů, které maximalizují pravděpodobnost toho, že vzorek má chuť označenou známkou 1, tj. chceme maximalizovat <img src="https://latex.codecogs.com/svg.latex?{P[y=1]}" title="{P[y=1]}" />. V terminologii kumulativního modelu používáme označení <img src="https://latex.codecogs.com/gif.latex?P[y\leq&space;1]"/>. Na logistické křivce se chceme dostat co nejvíce "doprava", aby na kategorie 1 - 8 (pro ty máme v tabulce výše členy <img src="https://latex.codecogs.com/svg.latex?\alpha_{1}" title="\alpha_{1}" /> až <img src="https://latex.codecogs.com/svg.latex?\alpha_{8}" title="\alpha_{8}" />) připadla většina pravděpodobností a na poslední kategorii, pro níž koeficient nemáme, zůstala co nejmenší pravděpodobnost. Dostat se "doprava" tedy znamená maximalizovat součet příspěvků jednotlivých proměnných. 
+A o jaké pravděpodobnosti se to vlastně bavíme? Při hledání nejlepšího receptu hledáme takové hodnoty vstupů, které maximalizují pravděpodobnost toho, že vzorek má chuť označenou známkou 1, tj. chceme maximalizovat <img src="https://latex.codecogs.com/svg.latex?{P[y=1]}" title="{P[y=1]}" />. V terminologii kumulativního modelu používáme označení <img src="https://latex.codecogs.com/gif.latex?P[y\leq&space;1]"/>. Na logistické křivce se chceme dostat co nejvíce "doprava", aby na kategorie 1 - 5 (pro ty máme v tabulce výše členy <img src="https://latex.codecogs.com/svg.latex?\alpha_{1}" title="\alpha_{1}" /> až <img src="https://latex.codecogs.com/svg.latex?\alpha_{5}" title="\alpha_{5}" />) připadla většina pravděpodobností a na poslední kategorii, pro níž koeficient nemáme, zůstala co nejmenší pravděpodobnost. Dostat se "doprava" tedy znamená maximalizovat součet příspěvků jednotlivých proměnných. 
 
 
 #### Ořechy (`nuts`)
@@ -72,8 +72,9 @@ Pro zájemce o důkladnější promyšlení tohoto závěru uvádím ještě pá
 
 ##### Poznámky pod čarou
 
-- doba rozležení macerátu s cukrovým rozvarem, to byla proměnná mimo moji kontrolu. Ochutnával jsem jeden týden po konci macerace nejdéle macerované šarže, která tedy byla rozležená právě jeden týden, zatímco ty nejrychleji macerované šarže byly v tu dobu již rozležené již 3 týdny.
-- část nízké výkonnosti mohla být způsobena i tím, že jsem redukoval model, který jsem používal při generování designů
-- Vyhodnotit devět vzorků bylo obtížné. Chuť má mnoho různých nuancí.
+- Doba rozležení macerátu s cukrovým rozvarem, to byla proměnná mimo moji kontrolu. Ochutnával jsem jeden týden po konci macerace nejdéle macerované šarže, která tedy byla rozležená právě jeden týden, zatímco ty nejrychleji macerované šarže byly v tu dobu již rozležené již 3 týdny.
+- Část nízké výkonnosti mohla být způsobena i tím, že jsem redukoval model, který jsem používal při generování designů.
+- Vyhodnotit chuť devíti vzorků bylo obtížné. Chuť má mnoho různých nuancí.
+- Asi sami cítíte, že počet vzorků je extrémně malý a výstup (chuť) je subjektivní a ani já sám bych nemusel při dalším ochutnávání přiřadit stejné pořadí (ochutnával jsem dvakrát). Tyto faktory určitě ovlivnily malou sílu modelu a významnost koeficientů.
 - Různí konzumenti mohou mít různé preference; tohle řazení platí jen pro mne samotného, a tedy i závěry modelu jsou šité na míru mně.
 
