@@ -33,12 +33,14 @@ Vyhodnocování modelu je činnost spočívající v pročítání výstupních 
 
 1. Zvolil jsem redukci proměnných v modelu, a sice jsem vypustil cukr<sup>2</sup> a cukr &times; ořechy (`sugar^2` a `sugar*nuts`). Pohledem do scatterplotu výše jsem tipnul, že právě toto proměnné způsobují separaci. Jejich vypuštěním se samozřejmě mohlo stát to, co se stane pokaždé při chybějící důležité proměnné: odhady ostatních parametrů jsou vychýlené. Tato obava mne však příliš netížila, neboť můj předpoklad o existenci interakce ("chuť je ovlivněna cukrem různě intenzivně při různých množstvích ořechů") byl zcela subjektivní. 
 
-Tento krok vedl k pěknému modelu. Z jeho výstupu ponechávám pouze dvě tabulky:
+ - Tento krok vedl k modelu, který potvrzoval moji hypotézu o kvadratické závislosti na množství ořechů. Ta závislost však bohužel byla způsobena overfittingem (pro zájemce ponechávám [učebnicový případ overfittingu zde](_includes/sas_outputs/DOE_ordinal_regression-results-overfit-brief.html)). 
+ - Proto jsem dále redukoval počet proměnných, jenže ať jsem se snažil, jak jsem chtěl, **ve všech modelech vykazoval nejsilnější vliv cukr**. Jeho síla i znaménko potvrzoval můj dojem z ochutnávání: více cukru znamená horší chuť. 
+
+1. Abych eliminoval vliv cukru, vyřadil jsem tři nejsladší (a jednoznačně nejméně chutné) šarže a model jsem odhadoval na zbylých šesti vzorcích. Nakonec mi v něm zůstala jediná slabě význaná proměnná: ořechy. Z výstupu toho modelu ponechávám pouze tabulku koeficientů:
 
 {% include sas_outputs/DOE_ordinal_regression-results-brief.html style="max-width: 500px;"%}
 
-- v sekci `Score Test for the Proportional Odds Assumption` se testuje, zda jsem platí předpoklad proporcionálního poměru šancí; tuto hypotézu ve statistickém žargonu "nemohu zamítnout", což znamená, že s velkou pravděpodobností platí,
-- v tabulce `Analysis of Maximum Likelihood Estimates` vidíme výsledné odhady a také jejich standardizované verze; ty nyní popíši více
+Výsledné odhady nyní popíši více.
  
 ### Interpretace modelu
 
@@ -49,21 +51,19 @@ Co tedy analýza dat ukázala? Jak chápat tabulku s koeficienty? Pro posouzení
 A o jaké pravděpodobnosti se to vlastně bavíme? Při hledání nejlepšího receptu hledáme takové hodnoty vstupů, které maximalizují pravděpodobnost toho, že vzorek má chuť označenou známkou 1, tj. chceme maximalizovat <img src="https://latex.codecogs.com/svg.latex?{P[y=1]}" title="{P[y=1]}" />. V terminologii kumulativního modelu používáme označení <img src="https://latex.codecogs.com/gif.latex?P[y\leq&space;1]"/>. Na logistické křivce se chceme dostat co nejvíce "doprava", aby na kategorie 1 - 8 (pro ty máme v tabulce výše členy <img src="https://latex.codecogs.com/svg.latex?\alpha_{1}" title="\alpha_{1}" /> až <img src="https://latex.codecogs.com/svg.latex?\alpha_{8}" title="\alpha_{8}" />) připadla většina pravděpodobností a na poslední kategorii, pro níž koeficient nemáme, zůstala co nejmenší pravděpodobnost. Dostat se "doprava" tedy znamená maximalizovat součet příspěvků jednotlivých proměnných. 
 
 
-#### Ořechy (proměnné `nuts` a `nuts*nuts`)
-- Pro ořechy jsem předpokládal kvadratickou závislost a koeficienty u lineárního i kvadratického členu jsou slabě významné (sloupec `Pr > ChiSq`), čili závislost se potvrdila,
-- standardizované odhady (poslední sloupec) jsou podobně silné: pokud si dosadíte průměrnou hmotnost použitých ořechů (19 ořechům odpovídá 550 gramů), zjistíte, že oba členy jsou (absolutně) téměř stejně velké, 
-- spočítáte-li si pro několik různých hmotností v rozsahu 250 - 700 g příspěvek ořechů, zjistíte, že je stále záporný - to je tím, že konstanta kvadratické funkce je obsažena v konstantách <img src="https://latex.codecogs.com/svg.latex?\left&space;\{\alpha&space;_{j}&space;\right&space;\}"/>,
-- koeficienty mají opačně znaménko, což znamená, že parabola je orientovaná "dolů": pro nějaké konkrétní `x` dosahuje minima, od něhož na obě strany roste.
- 
-#### Cukr (`sugar`) 
-- Při pohledu na sloupec `Pr > ChiSq` vidíme, že množství cukru je jednoznačně nejdůležitější proměnnou v modelu,
-- záporná hodnota koeficientu znamená, že menší množství cukru vede k lepší chuti
+#### Ořechy (`nuts`)
+- Toto je jediná slabě významná proměnná (sloupec `Pr > ChiSq`),
+- kladné znaménko intepretujeme tak, že vyšší hodnota proměnné vede k vyšší pravděpodobnosti toho, že šarže bude označena známkou 1.
 
 #### Množství vody (`water`) a délka macerace (`duration`)
-- na těchto proměnných téměř (voda), nebo vůbec (délka) nezáleží, neboť jejich významnost je malá (zejména u délky)
+- Na těchto proměnných výsledná chuť nezáleží, neboť jejich významnost je malá.
+ 
+#### Cukr (`sugar`) 
+- Tuto proměnnou zde nevidíte, neboť po vyřazení nejsladších šaržích jsem model fitoval na pouhých 6 vzorcích, a tak jsem se snažil snížit množství proměnných na minimum.
+- Všechny předchozí modely hodnotily přínos cukru záporně: více cukru znamenalo méně chuti.
 
 
-Celkově model není příliš silný (to vidím z koeficientů a také z tabulky, kterou zde nesdílím), což odpovídá tomu, že navzdory různorodosti experimentálních šarží výsledné chutě _nebyly_ příliš různé (resp. nebyly natolik jiné, abych je byl schopen seřadit s velkou mírou jistoty). Skoro to vypadá, že - s výjimkou cukru - na množství použitých surovin příliš nezáleží. Tento závěr podporuje i široké rozpětí uváděných vstupních surovin, které se vyskytuje v receptech. Ač mne tento závěr překvapil, je to závěr, s nímž jsem spokojen, neboť odpovídá mému subjektivnímu dojmu z degustace.
+Celkově model není příliš silný (to vidím z koeficientů a také z jiných tabulek, jež zde nesdílím). Zprvu jsem tím byl překvapen, ale věrně to odpovídá skutečnosti, že **navzdory různorodosti experimentálních šarží výsledné chutě _nebyly_ příliš různé** (resp. nebyly natolik jiné, abych je byl schopen seřadit s velkou mírou jistoty). Skoro to vypadá, že - s výjimkou cukru - na množství použitých surovin příliš nezáleží. Tento závěr podporuje i široké rozpětí uváděných vstupních surovin, které se vyskytuje v receptech. Jsem s tímto závěrem spokojen, neboť odpovídá mému subjektivnímu dojmu z degustace.
 
 Pro zájemce o důkladnější promyšlení tohoto závěru uvádím ještě pár poznámek na konci postu. Nyní však konečně můžeme přistoupit k [odvození nejlepšího receptu na ořechovku](orechovka7.html).
 
