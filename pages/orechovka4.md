@@ -18,7 +18,7 @@ Tyto tři skupiny znalostí nyní definujeme pro výrobu ořechovky.
 ### Které vstupy ovlivňují chuť ořechovky
 V předchozím postu jsem došel k tomu, že budu testovat čtyři faktory, které si označím následovně:
 
-- _x_: množství ořechů na 1 litr lihu, místo počtu budu uvažovat hmotnost ořechů v gramech 
+- _x_: množství ořechů na 1 litr alkoholového roztoku, v němž budu ořechy macerovat, místo počtu budu uvažovat hmotnost ořechů v gramech a mám změřeno, že průměrná hmotnost jednoho ořechu činí 22 gramů,
 - _v_: množství vody, jímž rozředím 1 l lihu, čímž ovlivním koncentraci lihu pro maceraci; vodu budu měřit v gramech
 - _d_: počet týdnů pro maceraci
 - _m_: množství cukru pro doslazení v gramech

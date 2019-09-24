@@ -40,6 +40,7 @@ Vyhodnocování modelu je činnost spočívající v pročítání výstupních 
 
 {% include sas_outputs/DOE_ordinal_regression-results-brief.html style="max-width: 500px;"%}
 
+
 Výsledné odhady nyní popíši více.
  
 ### Interpretace modelu
