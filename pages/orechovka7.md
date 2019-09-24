@@ -44,6 +44,6 @@ Tato proměnná také není statisticky významná, tj. na délce louhování ne
 - koření dle chuti              
 Ořechy očistěte, nakrájejte a dejte macerovat do lihu. Láhev s macerátem by měla být jen jemně dovřená, maceraci svědčí sluneční svit a občasné promíchání. Po 3 až 6 týdnech ořechy slijte, macerát přeceďte a smíchejte jej se sirupem, který svaříte z cukru a vody (množství volte podle toho, jak silný chcete likér mít; pomoci vám může být závislost uvedená [na konci tohoto postu](orechovka4.html)) a před vmícháním necháte vychladnout. Do smíchaného roztoku přidejte i koření a nechejte rozležet - čím déle, tím lépe. Doporučuji průběžně ochutnávat, abyste zjistili, jak se chuť mění a kdy vám nejvíce vyhovuje.
 
-PS: Budu rád, když recept někdy zkusíte a napíšete mi, jak vám chutná, ale vězte, že hodnocení chutí jsem prováděl já, a tak není zaručeno, že bude nejlepší i pro vás! Budete-li se mým přístupem chtít inspirovat a budete-li potřebovat radu, [napište mi zprávu](https://github.com/vojtech-filipec/vojtech-filipec.github.io/issues).
+Nezapomeňte: Hodnocení chutí jsem prováděl já. Budu rád, když recept někdy zkusíte a napíšete mi, jak vám chutná, ale není zaručeno, že bude nejlepší i pro vás! Budete-li se mým přístupem chtít inspirovat a budete-li potřebovat radu, [napište mi zprávu](https://github.com/vojtech-filipec/vojtech-filipec.github.io/issues).
 
 ---
