@@ -17,6 +17,7 @@ The main purpose of setting this page up is to share how I applied the Design of
 - [How to apply DoE in the search for recipe](pages/orechovka4.html)
 - [Mixing, infusing, degusting](pages/orechovka5.html): practical steps
 - [Data analysis](pages/orechovka6.html): what do the captured data say?
+- [Recipe for the best ořechovka](pages/orechovka7.html): the recipe I infered from data
 
 ### Riddles, quizes and rebuses for small children
 
