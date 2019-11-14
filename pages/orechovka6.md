@@ -27,16 +27,16 @@ Prozkoumejme graficky závislosti faktorů mezi sebou a vztah k chuti. Tento sca
 Vyhodnocování modelu je činnost spočívající v pročítání výstupních statistik, které diagnostikují předpoklady a odhadnutý model a popisují, k jakému odhadu dohadu došly. Mně však přijde zajímavé především popsat, s čím vším jsem se musel vypořádat a jak jsem postupoval. 
 
 1. Nejdříve jsem zkoušel vysvětlovat přesné pořadí pomocí hodnot vstupních faktorů za použití modelu, který jsem specifikoval [v předchozím postu](orechovka4.html). Narážel jsem však na problém s kompletní, resp. kvazi-kompletní separací pozorování. Co to znamená? Při použití toho uvažovaného modelu vysvětluje model na těchto datech cílovou proměnnou zcela (nebo téměř) dokonale, a maximálně věrohodné odhady parametrů by byly nekonečně velké! Já jsem však potřeboval odhady parametrů znát, abych mohl sestavit nejlepší recept! Na tuto situaci jsem měl dvě možná řešení:
-- vyřadit tři nejsladší vzorky, neboť velké množství cukru přebíjelo všechny ostatní faktory nejen při ochutnávání (tyto šarže byly _podstatně_ horší než ostatní), ale také při hledání parametrů.
-- redukovat model: vypustit některé proměnné
-- (také jsem se snažil použít Firthovu exaktní metodu odhadu a zkoušel jsem i model s parciální proporcionalitou, tzv. partial proportional odds model, ale tudy cesta nevedla)
+  - vyřadit tři nejsladší vzorky, neboť velké množství cukru přebíjelo všechny ostatní faktory nejen při ochutnávání (tyto šarže byly _podstatně_ horší než ostatní), ale také při hledání parametrů.
+  - redukovat model: vypustit některé proměnné
+  - (také jsem se snažil použít Firthovu exaktní metodu odhadu a zkoušel jsem i model s parciální proporcionalitou, tzv. partial proportional odds model, ale tudy cesta nevedla)
 
 1. Zvolil jsem redukci proměnných v modelu, a sice jsem vypustil cukr<sup>2</sup> a cukr &times; ořechy (`sugar^2` a `sugar*nuts`). Pohledem do scatterplotu výše jsem tipnul, že právě toto proměnné způsobují separaci. Jejich vypuštěním se samozřejmě mohlo stát to, co se stane pokaždé při chybějící důležité proměnné: odhady ostatních parametrů jsou vychýlené. Tato obava mne však příliš netížila, neboť můj předpoklad o existenci interakce ("chuť je ovlivněna cukrem různě intenzivně při různých množstvích ořechů") byl zcela subjektivní. 
 
- - Tento krok vedl k modelu, který potvrzoval moji hypotézu o kvadratické závislosti na množství ořechů. Ta závislost však bohužel byla způsobena overfittingem (pro zájemce ponechávám [učebnicový případ overfittingu zde](../_includes/sas_outputs/DOE_ordinal_regression-results-overfit-brief.html)). 
- - Proto jsem dále redukoval počet proměnných, jenže ať jsem se snažil, jak jsem chtěl, **ve všech modelech vykazoval nejsilnější vliv cukr**. Jeho síla i znaménko potvrzoval můj dojem z ochutnávání: více cukru znamená horší chuť. 
+   - Tento krok vedl k modelu, který potvrzoval moji hypotézu o kvadratické závislosti na množství ořechů. Ta závislost však bohužel byla způsobena overfittingem (pro zájemce ponechávám [učebnicový případ overfittingu zde](../_includes/sas_outputs/DOE_ordinal_regression-results-overfit-brief.html)). 
+   - Proto jsem dále redukoval počet proměnných, jenže ať jsem se snažil, jak jsem chtěl, **ve všech modelech vykazoval nejsilnější vliv cukr**. Jeho síla i znaménko potvrzoval můj dojem z ochutnávání: více cukru znamená horší chuť. 
 
-1. Abych eliminoval vliv cukru, vyřadil jsem tři nejsladší (a jednoznačně nejméně chutné) šarže a model jsem odhadoval na zbylých šesti vzorcích. Nakonec mi v něm zůstala jediná slabě význaná proměnná: ořechy. Z výstupu toho modelu ponechávám pouze tabulku koeficientů:
+3. Abych eliminoval vliv cukru, vyřadil jsem tři nejsladší (a jednoznačně nejméně chutné) šarže a model jsem odhadoval na zbylých šesti vzorcích. Nakonec mi v něm zůstala jediná slabě význaná proměnná: ořechy. Z výstupu toho modelu ponechávám pouze tabulku koeficientů:
 
 {% include sas_outputs/DOE_ordinal_regression-results-brief.html style="max-width: 500px;"%}
 
