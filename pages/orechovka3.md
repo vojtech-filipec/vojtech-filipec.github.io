@@ -8,7 +8,7 @@ V předchozích dvou postech jsem ukazoval, že [receptů na ořechovku je spous
 
 ---
 ### Počáteční seznam faktorů
-Po přečtení všech receptů jsem si sepsal, čím se recepty liší. Rozdílné postupy a ingredience představují vstupy, jejichž optimální kombinaci budu hledat:
+Přečetl jsem si všechny recepty a zde sepisuji, čím se liší. Rozdílné postupy a ingredience představují vstupy, jejichž optimální kombinaci budu hledat:
 
 1. množství ořechů: některé recepty uvádí počet ořechů, některé jejich hmotnost - já budu pracovat s hmotností, abych zohlednil různou velikost ořechů
 2. množství lihu pro maceraci
@@ -24,11 +24,11 @@ Po přečtení všech receptů jsem si sepsal, čím se recepty liší. Rozdíln
 12. kdy koření přidat: Rovnou do lihu při maceraci, nebo přidat až po scezení ořechů?
 13. jak koření připravit: rozvařovat ve vodě, nebo přidávat do chladného roztoku?
 
-**To je spousta faktorů!** Kdybych chtěl ověřit je všechny, narostlo by mé hledání do rozměrů, které by pro mne bylo těžké zvládnout - musel bych ověřit **několik desítek designů**. Proto jsem se zamyslel nad tím, jak situaci zjednodušit.
+**To je spousta faktorů!** Kdybych chtěl ověřit je všechny, narostlo by mé hledání do rozměrů, které je pro mne v domácích podmínkách těžké zvládnout - musel bych ověřit **několik desítek designů**. Proto jsem se zamyslel nad tím, jak situaci zjednodušit.
 
 - První dva vstupy nejsou nezávislé: zvýším-li množství lihu, musím pro intenzitu chuti nutně použít více ořechů. Sloučím tedy první dva faktory do nového faktoru _množství ořechů na 1 litr lihu_.
-- Faktor č. 6 nemohu volit libovolně s ohledem na to, že výsledný likér má mít koncentraci mezi 20 a 30 % alkoholu. Přidám-li vody málo, bude příliš alkoholický, v opačném případě bude vodnatý. Vyjdu tedy z koncentrace lihu pro maceraci (faktor č. 3) a z ředící rovnice dopočítám si, v jakém množství vody musím cukr rozpustit, abych na konci získal 30% roztok. Ředící rovnice není nic jiného, než základoškolská úloha "jakou koncentraci bude mít roztok smíchaný z 1 litru 80% ethanolu a 1 litru čisté vody".
-- Faktor č. 7 jsem se rozhodl netestovat, neboť recepty v zásadě říkají “čím déle necháte ořechovku uležetc tím lepši bude”. Pro vyhodnocení chuti experimentálních šarží budu zkoušet po aspoň třech týdnech. 
+- Faktor č. 6 nemohu volit libovolně s ohledem na to, že výsledný likér má mít koncentraci mezi 20 a 30 % alkoholu. Přidám-li vody málo, bude příliš alkoholický, v opačném případě bude vodnatý. Vyjdu tedy z koncentrace lihu pro maceraci (faktor č. 3) a z ředící rovnice dopočítám, v jakém množství vody musím cukr rozpustit, abych na konci získal 30% roztok. Ředící rovnice není nic jiného, než základoškolská úloha "jakou koncentraci bude mít roztok smíchaný z 1 litru 80% ethanolu a 1 litru čisté vody".
+- Faktor č. 7 jsem se rozhodl netestovat, neboť recepty v zásadě říkají “čím déle necháte ořechovku uležet, tím lepši bude”. Pro vyhodnocení chuti experimentálních šarží budu zkoušet po aspoň třech týdnech. 
 - Diskrétní faktory 8, 12 a 14 se odborně nazývají _blocking factors_ a situaci dost komplikují tím, že je musíme testovat na třikrát dvou úrovních (cukr od začátku vs. cukr po maceraci, obdobně s okamžikem přidání a s rozvařováním koření). Zde jsem učinil předpoklady, že 
   - přítomnost cukru neovlivní maceraci, a tak ho přidám až po scezení ořechů a 
   - přítomnost koření také neovlivní maceraci, a tak koření přidám rovnou do lihu a 
@@ -42,10 +42,10 @@ Tyto úvahy a předpoklady zredukovaly vstupy k testování na čtyři položky.
 
 ### Finální seznam faktorů
 
-1. množství ořechů na 1 litr lihu
-3. koncentrace lihu, v níž se ořechy macerují, neboli množství vody, jímž musím rozředit 1 l lihu 
-4. doba, po níž se ořechy macerují
-5. množství cukru pro doslazení
+1. množství ořechů na 1 litr lihu,
+3. koncentrace lihu, v níž se ořechy macerují, neboli množství vody, jímž musím před macerací rozředit 1 l lihu ,
+4. doba, po níž se ořechy macerují,
+5. množství cukru pro doslazení.
 
 
 ---

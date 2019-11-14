@@ -27,7 +27,7 @@ Recepty se liší nejen postupem (_Mám ořechy macerovat v silném alkoholu a p
 
 Receptů je tedy dost, ale který z nich je ten nejlepší? První nápad je stejně ďábelký jako množství surovin: **Vyzkouším každý z těch receptů a také jejich kombinace**: z prvního bych vzal množství cukru, z druhého použité koření, ze třetího časy macerace a zrání... Ano, tento postup je jistě možný, leč poněkud nepraktický, neboť **možných kombinací je 23,040** - tedy přes 23 tisíc receptů!
 
-Měl jsem tedy nepřeberné množství možností a musel jsem vymyslet, **jak vybrat postup a kombinaci surovin, jimiž získám nejlepší tu nejlepší ořechovku?** 
+Měl jsem tedy nepřeberné množství možností a musel jsem vymyslet, **jak vybrat postup a kombinaci surovin, jimiž získám tu nejlepší ořechovku?** 
 
 ![lih](../assets/orechovka/lih.jpg){: width="200" height="300"}`
 
