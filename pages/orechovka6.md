@@ -33,7 +33,7 @@ Vyhodnocování modelu je činnost spočívající v pročítání výstupních 
 
 1. Zvolil jsem redukci proměnných v modelu, a sice jsem vypustil cukr<sup>2</sup> a cukr &times; ořechy (`sugar^2` a `sugar*nuts`). Pohledem do scatterplotu výše jsem tipnul, že právě toto proměnné způsobují separaci. Jejich vypuštěním se samozřejmě mohlo stát to, co se stane pokaždé při chybějící důležité proměnné: odhady ostatních parametrů jsou vychýlené. Tato obava mne však příliš netížila, neboť můj předpoklad o existenci interakce ("chuť je ovlivněna cukrem různě intenzivně při různých množstvích ořechů") byl zcela subjektivní. 
 
- - Tento krok vedl k modelu, který potvrzoval moji hypotézu o kvadratické závislosti na množství ořechů. Ta závislost však bohužel byla způsobena overfittingem (pro zájemce ponechávám [učebnicový případ overfittingu zde](_includes/sas_outputs/DOE_ordinal_regression-results-overfit-brief.html)). 
+ - Tento krok vedl k modelu, který potvrzoval moji hypotézu o kvadratické závislosti na množství ořechů. Ta závislost však bohužel byla způsobena overfittingem (pro zájemce ponechávám [učebnicový případ overfittingu zde](../_includes/sas_outputs/DOE_ordinal_regression-results-overfit-brief.html)). 
  - Proto jsem dále redukoval počet proměnných, jenže ať jsem se snažil, jak jsem chtěl, **ve všech modelech vykazoval nejsilnější vliv cukr**. Jeho síla i znaménko potvrzoval můj dojem z ochutnávání: více cukru znamená horší chuť. 
 
 1. Abych eliminoval vliv cukru, vyřadil jsem tři nejsladší (a jednoznačně nejméně chutné) šarže a model jsem odhadoval na zbylých šesti vzorcích. Nakonec mi v něm zůstala jediná slabě význaná proměnná: ořechy. Z výstupu toho modelu ponechávám pouze tabulku koeficientů:
