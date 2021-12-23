@@ -77,8 +77,14 @@ task #2: Read the letters in the correct order:
 
 
 ## Battleship quiz
-lode_riddle.JPG
-lode_board.JPG
+Do you remember the battle of ships that you can play on a sheet of paper? We have a version with tin box and magnetic dots which makes it easier to get each letter; nonetheless, on the paper the quiz works similarly well.
+
+This is how one letter of the key is coded:
+![first letter](../assets/quizes/lode_board.JPG)
+
+My key consisted of four letters, so the full quiz looks as follows:
+![all letters](../assets/quizes/lode_riddle.JPG)
+
 
 
 ## A long text with perforation
