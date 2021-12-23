@@ -66,13 +66,13 @@ This is suitable for children who can read musical keys: code the keyword into k
 
 ![keys](../assets/quizes/noty.JPG)
 
-## Complete a map and follow a path
+## Complete a map and follow the path
 If you happen to find yourself on a camping site with places marked by _letters_ (i.e. not numbers), this two-phase quiz may come at hand. 
 
-task #1: Walk through the site:
+task #1: Walk through the site and fill letters to the map:
 ![take a walk](../assets/quizes/map_camp.JPG)
 
-task #2: Read the letters in the correct order:
+task #2: Read the letters in the correct order, which is drawn on another sheet. Note the unusual, non-rectangular shape around the site; this was supposed to act as a helper:
 ![use your map](../assets/quizes/map_camp_key.JPG)
 
 
