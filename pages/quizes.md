@@ -62,7 +62,7 @@ Alternatively, any sort of invisible ink can be used as described in the respect
 
 
 ## Musical keys
-This is suitable for children who can read musical keys: code the keyword into keys. Indeed it shall preferably consists of letters C, D, E, F, G, A, B and H; the picture shows a keyword that contains other letters too but the less the better. On the other hand, these extra letters givea hint how to interpret the keys. 
+This is suitable for children who can read musical keys: code the keyword into keys. Indeed it shall preferably consists of letters C, D, E, F, G, A, B and H; the picture shows a keyword that contains other letters too but the less the better. On the other hand, these extra letters give a hint how to interpret the keys. 
 
 ![keys](../assets/quizes/noty.JPG)
 
@@ -73,3 +73,13 @@ map_camp_key.JPG
 ## Battleship quiz
 lode_riddle.JPG
 lode_board.JPG
+
+## A long text with perforation
+This is how the quiz looks initially: some of the letters have diacritics inscribed, and there are small holes under lines: 
+![initial look](../assets/quizes/protisvetlo1.jpg)
+
+If you look against a light the perforation is clearly visible:
+![against a light](../assets/quizes/protisvetlo2.jpg)
+
+The collection of under-perforated letters forms the key:
+![solution](../assets/quizes/protisvetlo3.jpg)
