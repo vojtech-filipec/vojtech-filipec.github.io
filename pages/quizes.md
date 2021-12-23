@@ -67,12 +67,19 @@ This is suitable for children who can read musical keys: code the keyword into k
 ![keys](../assets/quizes/noty.JPG)
 
 ## Complete a map and follow a path
-map_camp.JPG
-map_camp_key.JPG
+If you happen to find yourself on a camping site with places marked by _letters_ (i.e. not numbers), this two-phase quiz may come at hand. 
+
+task #1: Walk through the site:
+![take a walk](../assets/quizes/map_camp.JPG)
+
+task #2: Read the letters in the correct order:
+![use your map](../assets/quizes/map_camp_key.JPG)
+
 
 ## Battleship quiz
 lode_riddle.JPG
 lode_board.JPG
+
 
 ## A long text with perforation
 This is how the quiz looks initially: some of the letters have diacritics inscribed, and there are small holes under lines: 

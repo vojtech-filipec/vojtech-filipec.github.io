@@ -2,3 +2,4 @@ _site
 Gemfile.lock
 /assets/original_pictures/*
 markdown_syntax_mynotes.md
+*.url
