@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <title>2 - no widgets</title>
+
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+	<py-env>
+      - numpy
+      - matplotlib
+    </py-env>
+  </head>
+
+  <body>
+    We try the curves with no widgets<br>
+    <py-script>
+import math
+import numpy as np
+import matplotlib.pyplot as plt
+# import ipywidgets as widgets
+
+# # Hypotrochoid curves
+# 
+# Implementation follows the parametric formulae which are are due https://en.wikipedia.org/wiki/Hypotrochoid:
+# > A hypotrochoid is a roulette traced by a point attached to a circle of radius **r** rolling around the inside of a fixed circle of radius **R**, where the point is a distance **d** from the center of the interior circle. 
+# 
+# Provide these parameters:
+
+# In[3]:
+
+
+def get_x(R, r, d, phi):
+    return (R-r)*math.cos(phi) + d*math.cos(phi*(R-r)/r)
+
+def get_y(R, r, d, phi):
+    return (R-r)*math.sin(phi) - d*math.sin(phi*(R-r)/r)
+
+
+# In[4]:
+
+
+def prepare_curve_data(R,r,d,steps):
+    multip = np.lcm(r, R)
+    phi_grid_rad = np.linspace(0, 2*math.pi*multip/R, steps)
+    #phi_grid_deg = [math.degrees(phi) for phi in phi_grid_rad]
+    coord_x = [get_x(R,r,d,phi_val) for phi_val in phi_grid_rad]
+    coord_y = [get_y(R,r,d,phi_val) for phi_val in phi_grid_rad]
+    return (coord_x, coord_y)
+
+
+# 
+
+# In[5]:
+
+
+# # line
+# R = 6
+# r = 3
+# d = 3
+
+# # circle
+# R = 6
+# r = 3
+# d = 0
+
+# R = 3 
+# r = 4 
+# d = 1 
+
+R = 8 # large circle
+r = 5  # small circle
+d = 4 # distance from the center of the interior circle (0 ... in its center; r ... at the circle; >r ... outside of it)
+
+#get_ipython().run_line_magic('pwd', '')
+#outfile = "_".join(['example', str(R), str(r), str(d)])+'.png'
+steps = 200 # how many points are plotted; smaller value creates a smoother pattern with larger size
+
+curve_data = prepare_curve_data(R,r,d,steps)
+
+x_data = curve_data[0]
+y_data = curve_data[1]
+max_value = 1.1*max(max(x_data, key=abs), max(y_data, key=abs))
+
+
+# In[7]:
+
+
+fig, ax = plt.subplots(figsize=(10, 10))
+ax.set_xlim([-max_value, max_value])
+ax.set_ylim(ax.get_xlim())
+ax.set_axis_off()
+
+plt.plot(x_data, y_data, '--')
+# plt.show() # does not work with pyscript
+fig #works fine with pyscript
+
+    </py-script>
+  </body>
+</html>
