@@ -31,4 +31,4 @@ Here we share ideas about puzzles/riddles/rebuses for small children who don't k
 
 ---
 
-This page was crated using Karl Broman's tutorial and templates that can be found [here](https://github.com/kbroman/simple_site). I keep Karl's instructions here; start with the [Overview](pages/overview.html).
+This page was crated using Karl Broman's tutorial and templates that can be found [here](https://github.com/kbroman/simple_site). I fyou want to follow Karl's instructions to set up your own page start with the [Overview](pages/overview.html).
