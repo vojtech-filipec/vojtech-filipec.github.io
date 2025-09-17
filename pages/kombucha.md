@@ -8,6 +8,8 @@ title: Jak si vyrobit kombuchu
 
 Kombucha je zdraví prospěšný nápoj, který vzniká fermentací čaje. Na internetu je spousta zdrojů, které popisují zdravotní prospěch; já se omezím na detailní popis výroby.
 
+![houba na hladině](../assets/kombucha/kombucha.jpg){: width="580" height="437"}`
+
 ---
 
 # Výroba krok za krokem
@@ -26,9 +28,7 @@ Kombucha je zdraví prospěšný nápoj, který vzniká fermentací čaje. Na in
 4. **Přidání kombuchové kultury**  
    Do chladného čaje vložím houbu (níže popisuji, jak ji získat). Sklenici zakryji hadříkem nebo papírovým ubrouskem a utěsním gumičkou. Takto nechám zrát na teplém místě, ovšem ne na slunci, přibližně 1 týden.  
 
-   Vložená houba vytvoří **dceřinou kultura**, přičemž ta původní (mateřská) často klesne ke dnu. Dceřiná houba vytvoří na hladině vrstvu, která jakoby „zavíčkuje“ nápoj a oddělí ho od okolního prostředí. Na tomto obrázku jde obě kultury dobře vidět.
-
-![houba na hladině](../assets/kombucha/kombucha.jpg){: width="200" height="300"}`
+   Vložená houba vytvoří **dceřinou kultura**, přičemž ta původní (mateřská) často klesne ke dnu. Dceřiná houba vytvoří na hladině vrstvu, která jakoby „zavíčkuje“ nápoj a oddělí ho od okolního prostředí. Na obrázku výše jde obě kultury dobře vidět.
 
 5. **Dokončení výroby**  
    - Po týdnu vyjmu dceřinou houbu, opláchnu ji pod vodou a s trochou nápoje uložím v zavřené sklenici v lednici, abych ji mohl použít při příští výrobě. chladné prostředí růst houby zastaví. 
@@ -58,7 +58,7 @@ Postup jsme popsal detailně, ovšem není třeba se jej držet úzkostlivě, na
 - Je možné **nechat nápoj zrát déle než týden** — čím déle fermentace probíhá, tím bude nápoj kyselejší. Naopak kratší doba fermentace vede ke sladší chuti.  
 - Po scezení a vyndání houby je možné do nápoje vložit ovoce, utáhnout víčko (aby se lahev natlakovala) a nechat další **jeden den** kvasit. To přidá bublinky a ovocnou chuť. Podle obsahu cukru v ovoci je vhodné tlak průběžně upouštět, aby nápoj po otevření nevyšuměl.
 
-![kombucha s ovocem](../assets/kombucha/kombucha-ovoce.jpg){: width="200" height="300"}`
+![kombucha s ovocem](../assets/kombucha/kombucha-ovoce.jpg)
 
 ---
 
