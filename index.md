@@ -5,11 +5,15 @@ title: Welcome to my page
 description: Minimal tutorial on making a simple website with GitHub Pages
 ---
 
-As of now, this page is about two topics:
+This page collects various topics:
+
+### Kombucha brewing
+
+Kombucha got some prominence in the recent years, and this is [my take on it](pages/kombucha.md).
 
 ### The Best Ořechovka Ever prepared using Desing of Experiments
 
-The main purpose of setting this page up is to share how I applied the Design of Experiments (DoE) approach to fine-tuning the recipe for ořechovka, a semi-sweet, iodine-rich liquer made of non-ripe green wallnuts. 
+The original purpose of setting up this page up is to share how I applied the Design of Experiments (DoE) approach to fine-tuning the recipe for ořechovka, a semi-sweet, iodine-rich liquer made of non-ripe green wallnuts. 
 
 - [Ořechovka](pages/orechovka1.html): the initial idea
 - [Design of Experiment](pages/orechovka2.html): super-fast intro to how DoE works
@@ -21,7 +25,7 @@ The main purpose of setting this page up is to share how I applied the Design of
 
 ### Riddles, quizes and rebuses for small children
 
-Secondly, I use this place to share ideas about puzzles/riddles/rebuses for small children who don't know reading, writing or arithmetics. 
+Here we share ideas about puzzles/riddles/rebuses for small children who don't know reading, writing or arithmetics. 
 - [page with riddles](pages/quizes.html)
 
 
