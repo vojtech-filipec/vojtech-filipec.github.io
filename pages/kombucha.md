@@ -12,7 +12,7 @@ Kombucha je zdraví prospěšný nápoj, který vzniká fermentací čaje. Na in
 
 ---
 
-# Výroba krok za krokem
+### Výroba krok za krokem
 
 1. **Příprava čaje**  
    Uvařím si litr libovolného čaje. Nejzdravější varianta vzniká z **černého čaje** (viz studie níže).  
@@ -36,33 +36,33 @@ Kombucha je zdraví prospěšný nápoj, který vzniká fermentací čaje. Na in
 
 ---
 
-# Zásadní pravidla
-Postup jsme popsal detailně, ovšem není třeba se jej držet úzkostlivě, naopak mi připadá robustní vůči experimentování se silou čaje, množstvím cukru, dobou zrání, teplootu prostředí... Tři pravidla jsou však zásadní: 
+### Zásadní pravidla
+Postup jsme popsal detailně, ovšem není třeba se jej držet úzkostlivě. Tři pravidla jsou však zásadní: 
 
 1. **Dostatek cukru**: opravdu dejte alespoň **85 g cukru na jeden litr nápoje**.  
 2. **Teplota čaje**: houbu vkládejte pouze do čaje, který má pokojovou teplotu.  
-
 3. **Hygiena**: všechny sklenice i víčka promývám vroucí vodou, na houbu sahám pouze čistýma rukama, dbám na dobré utěsnění plátýnka kolem sklenice.
 
 ---
 
-# Jak získat kombuchovou kulturu
+### Jak získat kombuchovou kulturu
 
 1. Lze ji koupit v obchodě nebo získat od jiného pěstitele.  
 2. Když koupíte chlazený (tedy nepasterizovaný) nápoj, zárodky houby v něm plavou. Z takového nápoje jsem kombuchu opakovaně pěstoval. Stačí se držet návodu výše, ovšem místo houby vložit cca 100 ml chlazené kombuchy.
 
 ---
 
-# Experimentování
+### Experimentování
 
 - Je možné **nechat nápoj zrát déle než týden** — čím déle fermentace probíhá, tím bude nápoj kyselejší. Naopak kratší doba fermentace vede ke sladší chuti.  
+- Dále můžete experimentovat se silou čaje, množstvím cukru, teplotou prostředí... Návod je docela odolný vůči různým variacím.
 - Po scezení a vyndání houby je možné do nápoje vložit ovoce, utáhnout víčko (aby se lahev natlakovala) a nechat další **jeden den** kvasit. To přidá bublinky a ovocnou chuť. Podle obsahu cukru v ovoci je vhodné tlak průběžně upouštět, aby nápoj po otevření nevyšuměl.
 
 ![kombucha s ovocem](../assets/kombucha/kombucha-ovoce.jpg)
 
 ---
 
-# Proč černý čaj?
+### Proč černý čaj?
 
 Volba čaje má vliv na chuť, metabolity i zdravotní účinky výsledného nápoje.  
 - Podle [této studie](https://www.sciencedirect.com/science/article/pii/S0963996919306684) má kombucha z černého čaje vyšší antioxidační kapacitu. Zkoumali také zelený čaj, ovocný čaj nikoliv. Z jejich shrnutí:
