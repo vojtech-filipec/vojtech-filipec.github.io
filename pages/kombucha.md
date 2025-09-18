@@ -33,8 +33,7 @@ Kombucha je zdraví prospěšný nápoj, který vzniká fermentací čaje. Na in
    Nápoj prý nemá přijít do styku s kovem. Mně přijde praktické používat zavařovací sklenice, neboť je snadné je čistit. Míchám plastovou lžící.
 
 6. **Dokončení výroby**  
-   - Po týdnu vyjmu dceřinou houbu, opláchnu ji pod vodou a s trochou nápoje uložím v zavřené sklenici v lednici, abych ji mohl použít při příští výrobě. chladné prostředí růst houby zastaví. 
-   - Nápoj zcedím do čistých sklenic, utěsním víkem a vložím do lednice. Tam vydrží několik týdnů.
+   Po týdnu vyjmu dceřinou houbu, opláchnu ji pod vodou a s trochou nápoje uložím v zavřené sklenici v lednici, abych ji mohl použít při příští výrobě. Chladné prostředí růst houby zastaví. Nápoj zcedím do čistých sklenic, utěsním víčkem a vložím do lednice. Tam vydrží několik týdnů.
 
 ---
 
@@ -56,7 +55,7 @@ Postup jsme popsal detailně, ovšem není třeba se jej držet úzkostlivě. T�
 
 ### Experimentování
 
-- Je možné **nechat nápoj zrát déle než týden** — čím déle fermentace probíhá, tím bude nápoj kyselejší. Naopak kratší doba fermentace vede ke sladší chuti.  
+- Je možné **nechat nápoj zrát déle než týden** — čím déle fermentace probíhá, tím bude nápoj kyselejší (po 13 dnech je _opravdu_ kyselý). Naopak kratší doba fermentace vede ke sladší chuti.  
 - Dále můžete experimentovat se silou čaje, množstvím cukru, teplotou prostředí... Návod je docela odolný vůči různým variacím.
 - Po scezení a vyndání houby je možné do nápoje vložit ovoce, utáhnout víčko (aby se lahev natlakovala) a nechat další **jeden den** kvasit. To přidá bublinky a ovocnou chuť. Podle obsahu cukru v ovoci je vhodné tlak průběžně upouštět, aby nápoj po otevření nevyšuměl.
 
@@ -74,5 +73,6 @@ Volba čaje má vliv na chuť, metabolity i zdravotní účinky výsledného ná
 - Další [výzkum](https://jn.nutrition.org/article/S0022-3166%2824%2901239-2/fulltext) testoval pouze vliv černého čaje a prokázal, že kombucha z něj může přispět k lepší ochraně střevní mikrobioty u lidí s i bez obezity.
 
 ---
+
 
 
