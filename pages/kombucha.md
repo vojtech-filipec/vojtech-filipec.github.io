@@ -26,11 +26,13 @@ Kombucha je zdraví prospěšný nápoj, který vzniká fermentací čaje. Na in
    Čaj nechám zchladnout na pokojovou teplotu. Houbu nelze dát do teplého čaje - tím by se zabila.
 
 4. **Přidání kombuchové kultury**  
-   Do chladného čaje vložím houbu (níže popisuji, jak ji získat). Sklenici zakryji hadříkem nebo papírovým ubrouskem a utěsním gumičkou. Takto nechám zrát na teplém místě, ovšem ne na slunci, přibližně 1 týden.  
+   Do chladného čaje vložím houbu (níže popisuji, jak ji získat). Sklenici zakryji hadříkem nebo papírovým ubrouskem a utěsním gumičkou. Takto nechám zrát na teplém místě, ovšem ne na slunci, přibližně 1 týden.       
 
    Vložená houba vytvoří **dceřinou kultura**, přičemž ta původní (mateřská) často klesne ke dnu. Dceřiná houba vytvoří na hladině vrstvu, která jakoby „zavíčkuje“ nápoj a oddělí ho od okolního prostředí. Na obrázku výše jde obě kultury dobře vidět.
 
-5. **Dokončení výroby**  
+   Nápoj prý nemá přijít do styku s kovem. Mně přijde praktické používat zavařovací sklenice, neboť je snadné je čistit. Míchám plastovou lžící.
+
+6. **Dokončení výroby**  
    - Po týdnu vyjmu dceřinou houbu, opláchnu ji pod vodou a s trochou nápoje uložím v zavřené sklenici v lednici, abych ji mohl použít při příští výrobě. chladné prostředí růst houby zastaví. 
    - Nápoj zcedím do čistých sklenic, utěsním víkem a vložím do lednice. Tam vydrží několik týdnů.
 
@@ -72,4 +74,5 @@ Volba čaje má vliv na chuť, metabolity i zdravotní účinky výsledného ná
 - Další [výzkum](https://jn.nutrition.org/article/S0022-3166%2824%2901239-2/fulltext) testoval pouze vliv černého čaje a prokázal, že kombucha z něj může přispět k lepší ochraně střevní mikrobioty u lidí s i bez obezity.
 
 ---
+
 
